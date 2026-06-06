@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+  --color-on-primary-container: #848484;
+  --color-on-tertiary-fixed-variant: #5d4201;
+  --color-error: #ba1a1a;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-fixed-dim: #c8c6c6;
+  --color-background: #f9f9f9;
+  --color-secondary: #5f5e5e;
+  --color-tertiary: #000000;
+  --color-on-error-container: #93000a;
+  --color-on-primary-fixed-variant: #474747;
+  --color-on-background: #1a1c1c;
+  --color-on-secondary-fixed-variant: #474747;
+  --color-inverse-on-surface: #f1f1f1;
+  --color-surface-variant: #e2e2e2;
+  --color-surface-tint: #5e5e5e;
+  --color-inverse-primary: #c6c6c6;
+  --color-secondary-fixed: #e4e2e1;
+  --color-inverse-surface: #2f3131;
+  --color-surface-bright: #f9f9f9;
+  --color-primary: #000000;
+  --color-on-secondary-fixed: #1b1c1c;
+  --color-surface-container: #eeeeee;
+  --color-primary-container: #1b1b1b;
+  --color-on-surface: #1a1c1c;
+  --color-primary-fixed-dim: #c6c6c6;
+  --color-surface-dim: #dadada;
+  --color-tertiary-fixed-dim: #e9c176;
+  --color-surface-container-high: #e8e8e8;
+  --color-outline-variant: #cfc4c5;
+  --color-secondary-container: #e4e2e1;
+  --color-surface-container-highest: #e2e2e2;
+  --color-error-container: #ffdad6;
+  --color-surface-container-low: #f3f3f3;
+  --color-primary-fixed: #e2e2e2;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #1b1b1b;
+  --color-on-tertiary-fixed: #261900;
+  --color-on-secondary: #ffffff;
+  --color-tertiary-container: #261900;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary-container: #656464;
+  --color-outline: #7e7576;
+  --color-surface: #f9f9f9;
+  --color-on-surface-variant: #4c4546;
+  --color-on-error: #ffffff;
+  --color-tertiary-fixed: #ffdea5;
+  --color-on-tertiary-container: #a17f3b;
+  --color-premium-brass: #C5A059;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-card: 16px;
+  --radius-button: 8px;
+
+  --spacing-gutter: 32px;
+  --spacing-section-gap: 120px;
+  --spacing-container-max: 1280px;
+  --spacing-margin-desktop: 64px;
+  --spacing-margin-mobile: 24px;
+  --spacing-unit: 8px;
+
+  --font-headline-sm: "Playfair Display", serif;
+  --font-headline-md: "Playfair Display", serif;
+  --font-headline-lg: "Playfair Display", serif;
+  --font-headline-xl: "Playfair Display", serif;
+  --font-headline-lg-mobile: "Playfair Display", serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-label-lg: "Inter", sans-serif;
+
+  --shadow-level-1: 0px 4px 20px rgba(0, 0, 0, 0.04);
+  --shadow-level-2: 0px 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined.fill {
+  font-variation-settings: 'FILL' 1;
+}

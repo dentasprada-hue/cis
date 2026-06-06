@@ -1,0 +1,320 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Home - Cahaya Interior Sejahtera</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-container": "#848484",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "background": "#f9f9f9",
+                        "secondary": "#5f5e5e",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-background": "#1a1c1c",
+                        "on-secondary-fixed-variant": "#474747",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-variant": "#e2e2e2",
+                        "surface-tint": "#5e5e5e",
+                        "inverse-primary": "#c6c6c6",
+                        "secondary-fixed": "#e4e2e1",
+                        "inverse-surface": "#2f3131",
+                        "surface-bright": "#f9f9f9",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-container": "#eeeeee",
+                        "primary-container": "#1b1b1b",
+                        "on-surface": "#1a1c1c",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-dim": "#dadada",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "surface-container-high": "#e8e8e8",
+                        "outline-variant": "#cfc4c5",
+                        "secondary-container": "#e4e2e1",
+                        "surface-container-highest": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f3f3f3",
+                        "primary-fixed": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-tertiary-fixed": "#261900",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#261900",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#656464",
+                        "outline": "#7e7576",
+                        "surface": "#f9f9f9",
+                        "on-surface-variant": "#4c4546",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#ffdea5",
+                        "on-tertiary-container": "#a17f3b",
+                        "premium-brass": "#C5A059"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "gutter": "32px",
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "24px",
+                        "unit": "8px"
+                    },
+                    fontFamily: {
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-xl": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "label-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+                        "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "500" }],
+                        "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "headline-lg-mobile": ["36px", { lineHeight: "44px", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+                        "headline-xl": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+          font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-margin-desktop py-6 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<a class="font-headline-sm text-headline-sm tracking-tighter text-primary dark:text-on-primary hover:opacity-70 transition-opacity duration-300" href="#">
+                Cahaya Interior Sejahtera
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-lg text-label-lg text-primary dark:text-on-primary border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="font-label-lg text-label-lg text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-label-lg text-label-lg text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Projects</a>
+<a class="font-label-lg text-label-lg text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Contact</a>
+<button class="ml-4 px-6 py-2 bg-premium-brass text-on-primary rounded font-label-lg text-label-lg hover:opacity-90 transition-opacity shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+                    Inquire
+                </button>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[600px] flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury interior design living room" class="w-full h-full object-cover object-center" data-alt="A sweeping, ultra-high-resolution photograph of a meticulously designed luxury living room interior. The scene features floor-to-ceiling windows allowing soft, diffused daylight to wash over rich, textured fabrics and polished natural stone surfaces. The color palette consists of sophisticated neutrals, warm off-whites, and deep charcoal accents, punctuated by subtle glints of brushed brass hardware. The composition exudes modern elegance, spaciousness, and architectural precision, embodying a premium, high-end design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCceW8YxXtWfExXMy7n8KiiVYo63gheuw8OmRvzw8tMbXKLqaw5chUZdCk5iKMrZz3OkYY2ZknYkhZxYEbNG50-j2MTJc2Nz2dSwqINPC-wqaGtgMWNM3mYm-LQ8jvl59w5k_Goh384C5eEzst4wguRPqoYy6C2RrqaryFkfR9Lk_VH5aUvN7ZAVdjMUn8XrCuTYyeX4IlQtjLI2jjZk3-66OJonstDA_OAbE3ai5oXvWDFmNoiCgP98U5ZPBDfP1HHGAnr-yJtnz1E">
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h1 class="font-headline-xl text-headline-xl text-white mb-6 max-w-4xl mx-auto drop-shadow-md">
+                    Defining Spaces, Elevating Lifestyles
+                </h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 max-w-2xl mx-auto">
+                    Mastering the art of high-end interior architecture. We transform premium properties into timeless sanctuaries of sophistication.
+                </p>
+<div class="flex gap-4 justify-center">
+<button class="px-8 py-3 bg-white text-primary rounded font-label-lg text-label-lg hover:bg-surface-variant transition-colors shadow-[0px_12px_40px_rgba(0,0,0,0.08)]">
+                        Explore Portfolio
+                    </button>
+</div>
+</div>
+</section>
+<!-- Introduction Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="pr-0 lg:pr-12">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8 leading-tight">
+                        A decade of creating architectural masterpieces.
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        At Cahaya Interior Sejahtera, we believe that true luxury lies in the details. Our approach blends rigorous architectural principles with exquisite materiality, resulting in spaces that are both deeply functional and profoundly beautiful.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10">
+                        From conceptual blueprint to final styling, we meticulously curate every element to reflect the unique aspirations of our discerning clientele.
+                    </p>
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary border-b border-primary pb-1 hover:opacity-70 transition-opacity" href="#">
+                        Discover Our Story <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="relative h-[500px] rounded-2xl overflow-hidden shadow-[0px_12px_40px_rgba(0,0,0,0.08)]">
+<img alt="Elegant minimalist bedroom design" class="w-full h-full object-cover" data-alt="A close-up, highly detailed view of an elegant, minimalist bedroom design. The focus is on the luxurious textures of the bedding and a bespoke, architectural wooden headboard. Soft, directional light highlights the fine grain of the wood and the subtle weave of the linens. The overall color scheme is monochromatic and soothing, featuring warm whites and gentle taupes. The image communicates a sense of calm, precision, and high-end residential luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGBq6rdZIbBuvDa7356hkANUxp7KkEfm7JUVA1-yqLNzPZItXeku9n6jvDyuv2VjqOCNFi4CnfFwMVewqckpHlWk-jnI4VvLDsjrLF0ei9iOtaikAnmee1ggQH7LKuSk663--_IVIglU57NtkK9nsxlkVQzXXfcH4sdR8gl5oXsDV_unMCxAOVQxgTvCFNRWrDq7jEDWkJeWdYi33LQCY_MGpY48Se4stH6O4N3NgZ_Gjc-LUCOlWpWnFiX9XNEgFd5C2Rsta4lCsU">
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">The Pillars of Our Practice</h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl mx-auto">Foundational principles that guide every project we undertake.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0px_12px_40px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+<div class="w-12 h-12 mb-6 flex items-center justify-center text-primary border border-outline-variant rounded-full">
+<span class="material-symbols-outlined text-[24px]" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Design Excellence</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Rigorous adherence to proportion, light, and spatial flow, ensuring every environment is a masterpiece of modern design.
+                        </p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0px_12px_40px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+<div class="w-12 h-12 mb-6 flex items-center justify-center text-primary border border-outline-variant rounded-full">
+<span class="material-symbols-outlined text-[24px]" data-icon="handyman">handyman</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Master Craftsmanship</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Collaborating only with elite artisans to source and shape the finest materials, from bespoke millwork to rare stone.
+                        </p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0px_12px_40px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+<div class="w-12 h-12 mb-6 flex items-center justify-center text-primary border border-outline-variant rounded-full">
+<span class="material-symbols-outlined text-[24px]" data-icon="verified">verified</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Unwavering Reliability</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                            A commitment to absolute precision in project management, delivering complex residential builds on time and to the highest standard.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects Gallery -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Selected Works</h2>
+<p class="font-body-md text-body-md text-secondary">A curated glimpse into our portfolio.</p>
+</div>
+<a class="hidden md:inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:opacity-70 transition-opacity" href="#">
+                    View All Projects <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative h-[400px] overflow-hidden rounded-[16px] mb-4 bg-surface-variant">
+<img alt="The Serene Penthouse" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A stunning view of a contemporary luxury kitchen and dining area in a high-rise penthouse. The space features sleek, matte black cabinetry contrasting with a massive, dramatically veined white marble island. Natural light floods the room, emphasizing the clean, minimalist architectural lines and the premium finishes. The scene is styled impeccably, conveying a sense of sophisticated, modern urban living." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_cCYNroNC2g8x5vlZp6ZWx-F9xXa0EeTd8GqF8i4RVYy0GQTLzJUgVa_F6nsrZMwjl9ih2ncAd_7V8vcO-AOAutYiLKc7wD6yZDK3bMz7qpcP-uSfpv4J_EL2RAWcNQ7MShieesWWl1q8b-vQodTpeIZQtp4omiQra1YyZySo1IjOlAKu4w-ZWsbTCvSae84rwxxi5XFaYBipBtFFQrxSlmnchtMBFUfqtp6ATAr6nkox0eya_zjSV0aRsBk9aygkpgHS_OhKDdTf">
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">The Serene Penthouse</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Jakarta Selatan • Complete Renovation</p>
+</div>
+<!-- Project Card 2 -->
+<div class="group cursor-pointer md:mt-16">
+<div class="relative h-[400px] overflow-hidden rounded-[16px] mb-4 bg-surface-variant">
+<img alt="Villa Lumina" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A gorgeous, wide-angle shot of a luxurious, modern living room bathed in golden hour sunlight. The room is characterized by expansive floor-to-ceiling glass walls that blur the line between indoors and outdoors. The interior features low-profile, elegant furniture in soft, earthy tones, resting on a polished concrete floor. The overall aesthetic is highly architectural, serene, and deeply connected to its environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcJaOqJC9aUaNl0TTecvXgyC2yiVsNbl8MqnqXSOy-ib4NB9DHBu-TlwE7Hrsws7NKQy1Sg0ciEfQJ6wQLlEVSdDAjLM-10UddwbUerV-h48htSAAKbGCfvVGOuReDpB0qmTH6OvcZEEjxaFfXJW3BJ2ZUe39_EyxRHrBBnh8LsjlanYHdlcwEP8aGjWSrduVxqoLbDec_vBi28OWqx2qPY32AW3aXopH_8ODnZDIsjnnSWJxg1YKnMCx2PNVVfALKJca0R0pYPcxs">
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Villa Lumina</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Bali • Interior Architecture</p>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-24 border-y border-outline-variant/30 bg-surface px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-outline-variant/30">
+<div class="py-4">
+<div class="font-headline-xl text-headline-xl text-primary mb-2">150+</div>
+<div class="font-label-md text-label-md text-secondary uppercase tracking-wider">Projects Completed</div>
+</div>
+<div class="py-4">
+<div class="font-headline-xl text-headline-xl text-primary mb-2">120+</div>
+<div class="font-label-md text-label-md text-secondary uppercase tracking-wider">Happy Clients</div>
+</div>
+<div class="py-4">
+<div class="font-headline-xl text-headline-xl text-primary mb-2">10</div>
+<div class="font-label-md text-label-md text-secondary uppercase tracking-wider">Years Experience</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop text-center max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Ready to elevate your space?</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-10">
+                Schedule a private consultation with our principal designers to discuss your vision.
+            </p>
+<button class="px-10 py-4 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg hover:bg-inverse-surface transition-colors shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+                Start Your Dream Project Today
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap border-t border-outline-variant bg-background dark:bg-primary-container opacity-90 hover:opacity-100 transition-opacity">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<div class="font-headline-sm text-headline-sm text-primary dark:text-on-primary mb-4">
+                    Cahaya Interior Sejahtera
+                </div>
+<p class="font-body-sm text-body-sm text-on-background dark:text-on-primary-fixed mb-6">
+                    Crafting spaces of enduring elegance and refined sophistication.
+                </p>
+</div>
+<div class="md:col-span-2 mb-8 md:mb-0">
+    <h4 class="font-label-lg text-label-lg text-primary mb-6 uppercase tracking-wider">Connect With Us</h4>
+    <div class="grid grid-cols-2 gap-4">
+        <a href="#" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            WhatsApp
+        </a>
+        <a href="#" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
+            <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+            Instagram
+        </a>
+        <a href="#" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
+            <span class="material-symbols-outlined text-[20px]">movie</span>
+            TikTok
+        </a>
+        <a href="#" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
+            <span class="material-symbols-outlined text-[20px]">location_on</span>
+            Titik Maps
+        </a>
+    </div>
+</div>
+<div class="md:col-span-1">
+<p class="font-body-sm text-body-sm text-secondary dark:text-secondary-fixed-dim mt-auto">
+                    © 2024 Cahaya Interior Sejahtera. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+
+
+</body></html>
