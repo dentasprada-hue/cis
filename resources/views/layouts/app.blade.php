@@ -142,7 +142,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- Google Analytics (GA4) -->
-    {{-- @if(config('services.google.analytics_id'))
+    @if(config('services.google.analytics_id'))
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google.analytics_id') }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -150,15 +150,15 @@
       gtag('js', new Date());
       gtag('config', "{{ config('services.google.analytics_id') }}");
     </script>
-    @endif --}}
+    @endif
 
     <!-- Google Search Console -->
-    {{-- @if(config('services.google.search_console_verification'))
+    @if(config('services.google.search_console_verification'))
     <meta name="google-site-verification" content="{{ config('services.google.search_console_verification') }}">
-    @endif --}}
+    @endif
 
     {{-- JSON-LD Structured Data (Organization & LocalBusiness Schemas) --}}
-    {{-- <script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -218,9 +218,9 @@
         }
       ]
     }
-    </script> --}}
+    </script>
 
-    {{-- @yield('schema') --}}
+    @yield('schema')
 </head>
 <body class="bg-background text-on-background antialiased selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed">
 
