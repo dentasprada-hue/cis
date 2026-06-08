@@ -5,3 +5,7 @@ nixPkgs = [
   "php84Extensions.pdo_mysql",
   "php84Extensions.mysqli",
 ]
+
+# Remove .env created by composer install — Railway injects env vars at runtime
+[phases.install]
+cmds = ["...", "rm -f .env"]
