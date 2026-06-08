@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html class="light scroll-smooth" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="light scroll-smooth" lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- SEO Meta Tags -->
-    <title>@yield('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium')</title>
-    <meta name="description" content="@yield('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.')">
+    <title><?php echo $__env->yieldContent('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium'); ?></title>
+    <meta name="description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.'); ?>">
     <meta name="keywords" content="Cahaya Interior Sejahtera, Jasa Interior, Interior Rumah, Interior Kantor, Desain Interior Mewah, Interior Jakarta, Kontraktor Interior">
-    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="canonical" href="<?php echo e(url()->current()); ?>">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="@yield('og_type', 'website')">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="@yield('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium')">
-    <meta property="og:description" content="@yield('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.')">
-    <meta property="og:image" content="@yield('og_image', asset('images/logo.png'))">
+    <meta property="og:type" content="<?php echo $__env->yieldContent('og_type', 'website'); ?>">
+    <meta property="og:url" content="<?php echo e(url()->current()); ?>">
+    <meta property="og:title" content="<?php echo $__env->yieldContent('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium'); ?>">
+    <meta property="og:description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.'); ?>">
+    <meta property="og:image" content="<?php echo $__env->yieldContent('og_image', asset('images/logo.png')); ?>">
     <meta property="og:site_name" content="Cahaya Interior Sejahtera">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta property="twitter:title" content="@yield('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium')">
-    <meta property="twitter:description" content="@yield('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.')">
-    <meta property="twitter:image" content="@yield('og_image', asset('images/logo.png'))">
+    <meta property="twitter:url" content="<?php echo e(url()->current()); ?>">
+    <meta property="twitter:title" content="<?php echo $__env->yieldContent('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium'); ?>">
+    <meta property="twitter:description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.'); ?>">
+    <meta property="twitter:image" content="<?php echo $__env->yieldContent('og_image', asset('images/logo.png')); ?>">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -142,32 +142,32 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- Google Analytics (GA4) -->
-    @if(config('services.google.analytics_id'))
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google.analytics_id') }}"></script>
+    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(config('services.google.analytics_id')): ?>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo e(config('services.google.analytics_id')); ?>"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', "{{ config('services.google.analytics_id') }}");
+          gtag('config', "<?php echo e(config('services.google.analytics_id')); ?>");
         </script>
-    @endif
+    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
 
     <!-- Google Search Console -->
-    @if(config('services.google.search_console_verification'))
-        <meta name="google-site-verification" content="{{ config('services.google.search_console_verification') }}">
-    @endif
+    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(config('services.google.search_console_verification')): ?>
+        <meta name="google-site-verification" content="<?php echo e(config('services.google.search_console_verification')); ?>">
+    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
 
-    {{-- JSON-LD Structured Data (Organization & LocalBusiness Schemas) --}}
+    
     <script type="application/ld+json">
     {
-      "@@context": "https://schema.org",
-      "@@type": "Organization",
-      "@@id": "{{ url('/') }}/#organization",
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "<?php echo e(url('/')); ?>/#organization",
       "name": "Cahaya Interior Sejahtera",
-      "url": "{{ url('/') }}",
-      "logo": "{{ asset('images/logo.png') }}",
+      "url": "<?php echo e(url('/')); ?>",
+      "logo": "<?php echo e(asset('images/logo.png')); ?>",
       "contactPoint": {
-        "@@type": "ContactPoint",
+        "@type": "ContactPoint",
         "telephone": "+62-21-555-0198",
         "contactType": "customer service",
         "email": "inquiries@cahayainterior.com"
@@ -181,16 +181,16 @@
 
     <script type="application/ld+json">
     {
-      "@@context": "https://schema.org",
-      "@@type": "LocalBusiness",
-      "@@id": "{{ url('/') }}/#localbusiness",
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "<?php echo e(url('/')); ?>/#localbusiness",
       "name": "Cahaya Interior Sejahtera",
-      "image": "{{ asset('images/logo.png') }}",
+      "image": "<?php echo e(asset('images/logo.png')); ?>",
       "telephone": "+62-21-555-0198",
       "email": "inquiries@cahayainterior.com",
       "priceRange": "$$$",
       "address": {
-        "@@type": "PostalAddress",
+        "@type": "PostalAddress",
         "streetAddress": "Jl. Sudirman Kav. 52-53, Sudirman Central Business District (SCBD)",
         "addressLocality": "Jakarta Selatan",
         "addressRegion": "DKI Jakarta",
@@ -198,14 +198,14 @@
         "addressCountry": "ID"
       },
       "geo": {
-        "@@type": "GeoCoordinates",
+        "@type": "GeoCoordinates",
         "latitude": -6.2241,
         "longitude": 106.8122
       },
-      "url": "{{ url('/') }}",
+      "url": "<?php echo e(url('/')); ?>",
       "openingHoursSpecification": [
         {
-          "@@type": "OpeningHoursSpecification",
+          "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
             "Monday",
             "Tuesday",
@@ -220,18 +220,60 @@
     }
     </script>
 
-    @yield('schema')
+    <?php echo $__env->yieldContent('schema'); ?>
 </head>
 <body class="bg-background text-on-background antialiased selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed">
 
     <!-- Top Navigation -->
-    <x-navigation />
+    <?php if (isset($component)) { $__componentOriginalf75d29720390c8e1fa3307604849a543 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf75d29720390c8e1fa3307604849a543 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.navigation','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('navigation'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf75d29720390c8e1fa3307604849a543)): ?>
+<?php $attributes = $__attributesOriginalf75d29720390c8e1fa3307604849a543; ?>
+<?php unset($__attributesOriginalf75d29720390c8e1fa3307604849a543); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf75d29720390c8e1fa3307604849a543)): ?>
+<?php $component = $__componentOriginalf75d29720390c8e1fa3307604849a543; ?>
+<?php unset($__componentOriginalf75d29720390c8e1fa3307604849a543); ?>
+<?php endif; ?>
 
     <!-- Main Content Content -->
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
 
     <!-- Footer -->
-    <x-footer />
+    <?php if (isset($component)) { $__componentOriginal8a8716efb3c62a45938aca52e78e0322 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8a8716efb3c62a45938aca52e78e0322 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.footer','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('footer'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal8a8716efb3c62a45938aca52e78e0322)): ?>
+<?php $attributes = $__attributesOriginal8a8716efb3c62a45938aca52e78e0322; ?>
+<?php unset($__attributesOriginal8a8716efb3c62a45938aca52e78e0322); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8a8716efb3c62a45938aca52e78e0322)): ?>
+<?php $component = $__componentOriginal8a8716efb3c62a45938aca52e78e0322; ?>
+<?php unset($__componentOriginal8a8716efb3c62a45938aca52e78e0322); ?>
+<?php endif; ?>
 
 </body>
-</html>
+</html><?php /**PATH C:\Users\ridwa\cis\resources\views/layouts/app.blade.php ENDPATH**/ ?>
