@@ -1,0 +1,7 @@
+# Extend default Nixpacks packages with mysqlnd-backed pdo_mysql (required for Railway MySQL 8.4+)
+[phases.setup]
+nixPkgs = [
+  "...",
+  "php84Extensions.pdo_mysql",
+  "php84Extensions.mysqli",
+]
