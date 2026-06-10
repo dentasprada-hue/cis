@@ -64,7 +64,7 @@
         </div>
         <div class="mt-16 md:mt-24 text-center">
             <button class="font-label-lg text-label-lg text-primary border border-primary px-8 py-4 rounded-button hover:bg-primary hover:text-on-primary transition-colors duration-300 w-full sm:w-auto">
-                <?php echo e(__('projects.load_more')); ?>
+                <?php echo e(__('Load More')); ?>
 
             </button>
         </div>

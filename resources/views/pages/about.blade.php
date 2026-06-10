@@ -6,18 +6,30 @@
 @section('content')
 <main class="pt-2 md:pt-4">
     <!-- Hero Section -->
-    <section class="py-12 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+    <section class="min-h-[75vh] flex items-center py-10 md:py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-gutter items-center">
-            <div class="md:col-span-5 space-y-5 md:space-y-6">
-                <h1 class="font-headline-lg text-[28px] sm:text-[36px] md:text-headline-xl text-primary leading-tight">
-                    {{ __('about.title') }}
+            <div class="md:col-span-6 space-y-4 md:space-y-6 lg:space-y-8">
+                <p class="font-label-sm text-primary-dark tracking-wide uppercase text-sm md:text-base">{{ __('about.hero_label') }}</p>
+                <h1 class="font-headline-xl text-[36px] sm:text-[48px] md:text-[52px] lg:text-[60px] text-primary leading-tight max-w-xl">
+                    {{ __('about.hero_heading') }}
                 </h1>
-                <p class="font-body-lg text-body-lg text-secondary">
-                    {{ __('about.description') }}
+                <p class="font-body-lg text-secondary max-w-md md:text-lg">
+                    {{ __('about.hero_description') }}
                 </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-secondary font-body-md text-sm md:text-base pt-2">
+                    <p>• {{ __('about.trust_projects') }}</p>
+                    <p>• {{ __('about.trust_segments') }}</p>
+                    <p>• {{ __('about.trust_service') }}</p>
+                    <p>• {{ __('about.trust_since') }}</p>
+                </div>
+                <a href="{{ route('projects') }}" class="inline-block mt-6 px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300 shadow-lg text-base md:text-lg">
+                    {{ __('about.hero_cta') }}
+                </a>
             </div>
-            <div class="md:col-span-7 h-[260px] sm:h-[380px] md:h-[500px] lg:h-[700px] relative rounded-xl overflow-hidden shadow-level-1">
-                <img alt="Desain interior minimalis premium oleh Cahaya Interior Sejahtera" class="w-full h-full object-cover" src="{{ asset('images/3.png') }}">
+            <div class="md:col-span-6 flex justify-end">
+                <div class="relative w-full md:w-11/12 lg:w-full max-w-[650px] rounded-xl overflow-hidden shadow-level-1">
+                    <img alt="Premium interior design project by Cahaya Interior Sejahtera" class="w-full h-auto rounded-xl" src="{{ asset('images/3.png') }}">
+                </div>
             </div>
         </div>
     </section>
