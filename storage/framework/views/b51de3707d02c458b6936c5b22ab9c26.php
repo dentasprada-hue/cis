@@ -4,34 +4,53 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+    <link rel="icon" href="<?php echo e(asset('images/logo.png')); ?>" type="image/png">
+
     <!-- SEO Meta Tags -->
     <title><?php echo $__env->yieldContent('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium'); ?></title>
-    <meta name="description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.'); ?>">
-    <meta name="keywords" content="Cahaya Interior Sejahtera, Jasa Interior, Interior Rumah, Interior Kantor, Desain Interior Mewah, Interior Jakarta, Kontraktor Interior">
+    <meta name="description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera menyediakan jasa desain interior dan pengerjaan interior untuk rumah, kantor, dan ruang komersial. Layanan meliputi Interior Rumah, Interior Kantor, Furniture Custom, Kitchen Set, dan Renovasi Interior.'); ?>">
+    <meta name="keywords" content="<?php echo $__env->yieldContent('meta_keywords', 'Cahaya Interior Sejahtera, Jasa Interior, Interior Rumah, Interior Kantor, Desain Interior Mewah, Interior Jakarta, Kontraktor Interior'); ?>">
     <link rel="canonical" href="<?php echo e(url()->current()); ?>">
     <meta name="robots" content="index, follow">
+
+    <!-- Hreflang for multilingual SEO -->
+    <?php
+        $currentRoute = Route::currentRouteName();
+        $currentParams = Route::current() ? Route::current()->parameters() : [];
+        $paramsWithoutLocale = collect($currentParams)->except('locale')->toArray();
+    ?>
+    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($currentRoute): ?>
+        <link rel="alternate" hreflang="id" href="<?php echo e(route($currentRoute, array_merge(['locale' => 'id'], $paramsWithoutLocale))); ?>">
+        <link rel="alternate" hreflang="en" href="<?php echo e(route($currentRoute, array_merge(['locale' => 'en'], $paramsWithoutLocale))); ?>">
+        <link rel="alternate" hreflang="x-default" href="<?php echo e(route($currentRoute, array_merge(['locale' => 'id'], $paramsWithoutLocale))); ?>">
+    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="<?php echo $__env->yieldContent('og_type', 'website'); ?>">
     <meta property="og:url" content="<?php echo e(url()->current()); ?>">
     <meta property="og:title" content="<?php echo $__env->yieldContent('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium'); ?>">
-    <meta property="og:description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.'); ?>">
-    <meta property="og:image" content="<?php echo $__env->yieldContent('og_image', asset('images/logo.png')); ?>">
+    <meta property="og:description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera menyediakan jasa desain interior dan pengerjaan interior untuk rumah, kantor, dan ruang komersial. Layanan meliputi Interior Rumah, Interior Kantor, Furniture Custom, Kitchen Set, dan Renovasi Interior.'); ?>">
+    <meta property="og:image" content="<?php echo $__env->yieldContent('og_image', 'https://cahayainteriorsejahtera.com/og-image.jpg'); ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Cahaya Interior Sejahtera">
+    <meta property="og:locale" content="<?php echo e(app()->getLocale() === 'id' ? 'id_ID' : 'en_US'); ?>">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="<?php echo e(url()->current()); ?>">
-    <meta property="twitter:title" content="<?php echo $__env->yieldContent('title', 'Cahaya Interior Sejahtera - Jasa Interior Rumah & Kantor Premium'); ?>">
-    <meta property="twitter:description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera adalah penyedia jasa interior rumah dan kantor premium. Kami menghadirkan desain minimalis modern dan material berkualitas tinggi.'); ?>">
-    <meta property="twitter:image" content="<?php echo $__env->yieldContent('og_image', asset('images/logo.png')); ?>">
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="<?php echo e(url()->current()); ?>">
+    <meta name="twitter:title" content="<?php echo $__env->yieldContent('title', 'Cahaya Interior Sejahtera - Jasa Desain Interior Rumah & Kantor'); ?>">
+    <meta name="twitter:description" content="<?php echo $__env->yieldContent('meta_description', 'Cahaya Interior Sejahtera menyediakan jasa desain interior dan pengerjaan interior untuk rumah, kantor, dan ruang komersial. Layanan meliputi Interior Rumah, Interior Kantor, Furniture Custom, Kitchen Set, dan Renovasi Interior.'); ?>">
+    <meta name="twitter:image" content="<?php echo $__env->yieldContent('og_image', 'https://cahayainteriorsejahtera.com/og-image.jpg'); ?>">
 
     <!-- Google Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
     <!-- Tailwind Config from Design -->
     <script>
@@ -116,6 +135,18 @@
                         "headline-xl": ["Playfair Display"],
                         "body-lg": ["Inter"],
                         "label-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+                        "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "500" }],
+                        "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "headline-lg-mobile": ["36px", { lineHeight: "44px", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+                        "headline-xl": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }]
                     },
                     fontSize: {
                         "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "600" }],

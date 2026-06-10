@@ -2,9 +2,13 @@
 
 namespace App\Filament\Resources\Projects\Tables;
 
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ToggleColumn;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
@@ -54,16 +58,16 @@ class ProjectsTable
                         'Office' => 'Office',
                         'Hospitality' => 'Hospitality',
                     ]),
-                \Filament\Tables\Filters\Filter::make('is_featured')
+                Filter::make('is_featured')
                     ->query(fn ($query) => $query->where('is_featured', true))
                     ->label('Only Featured'),
             ])
             ->actions([
-                \Filament\Tables\Actions\EditAction::make(),
+                EditAction::make(),
             ])
             ->bulkActions([
-                \Filament\Tables\Actions\BulkActionGroup::make([
-                    \Filament\Tables\Actions\DeleteBulkAction::make(),
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }

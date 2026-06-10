@@ -1,37 +1,68 @@
-<footer class="w-full py-section-gap border-t border-outline-variant bg-background opacity-90 hover:opacity-100 transition-opacity">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div class="md:col-span-1 mb-8 md:mb-0">
-            <div class="font-headline-sm text-headline-sm text-primary mb-4">
-                Cahaya Interior Sejahtera
+<footer class="w-full py-16 md:py-section-gap border-t border-outline-variant bg-background">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+            <!-- Brand -->
+            <div class="sm:col-span-2 md:col-span-1">
+                <div class="font-headline-sm text-[20px] md:text-headline-sm text-primary mb-3 leading-tight">
+                    Cahaya Interior Sejahtera
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Jasa desain dan pengerjaan interior untuk rumah, kantor, dan ruang komersial.
+                </p>
             </div>
-            <p class="font-body-sm text-body-sm text-on-background mb-6">
-                Crafting spaces of enduring elegance and refined sophistication.
-            </p>
-        </div>
-        <div class="md:col-span-2 mb-8 md:mb-0">
-            <h4 class="font-label-lg text-label-lg text-primary mb-6 uppercase tracking-wider">Connect With Us</h4>
-            <div class="grid grid-cols-2 gap-4">
-                <a href="https://wa.me/62215550198" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
-                    <span class="material-symbols-outlined text-[20px]">chat</span>
-                    WhatsApp
-                </a>
-                <a href="https://instagram.com/cahayainteriorsejahtera" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
-                    <span class="material-symbols-outlined text-[20px]">photo_camera</span>
-                    Instagram
-                </a>
-                <a href="https://tiktok.com/@cahayainteriorsejahtera" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
-                    <span class="material-symbols-outlined text-[20px]">movie</span>
-                    TikTok
-                </a>
-                <a href="https://maps.google.com/?q=Jl.+Sudirman+Kav.+52-53+SCBD+Jakarta+Selatan" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
-                    <span class="material-symbols-outlined text-[20px]">location_on</span>
-                    Titik Maps
-                </a>
+
+            <!-- Navigation Links -->
+            <div>
+                <h4 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Halaman</h4>
+                <ul class="flex flex-col gap-3">
+                    <li><a href="<?php echo e(route('home')); ?>" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors"><?php echo e(__('nav.home')); ?></a></li>
+                    <li><a href="<?php echo e(route('about')); ?>" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors"><?php echo e(__('nav.about')); ?></a></li>
+                    <li><a href="<?php echo e(route('projects')); ?>" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors"><?php echo e(__('nav.projects')); ?></a></li>
+                    <li><a href="<?php echo e(route('contact')); ?>" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors"><?php echo e(__('nav.contact')); ?></a></li>
+                </ul>
+            </div>
+
+            <!-- Connect -->
+            <div>
+                <h4 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Hubungi Kami</h4>
+                <div class="flex flex-col gap-3">
+                    <a href="https://wa.me/6285776755884" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
+                        <span class="material-symbols-outlined text-[20px] shrink-0">chat</span>
+                        WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/cahayainteriorsejahtera_?igsh=d2tydTJoYWMwMXI4" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
+                        <span class="material-symbols-outlined text-[20px] shrink-0">photo_camera</span>
+                        Instagram
+                    </a>
+                    <a href="https://www.tiktok.com/@cahayainteriorsejahteraa?_r=1&_t=ZS-973nIp4BVCR" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
+                        <span class="material-symbols-outlined text-[20px] shrink-0">movie</span>
+                        TikTok
+                    </a>
+                    <a href="https://maps.google.com/?q=Jl.+Sudirman+Kav.+52-53+SCBD+Jakarta+Selatan" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
+                        <span class="material-symbols-outlined text-[20px] shrink-0">location_on</span>
+                        Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Kontak</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="mailto:cahayainteriorsejahtera@gmail.com" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors break-all">cahayainteriorsejahtera@gmail.com</a>
+                    <a href="https://wa.me/6285776755884" target="_blank" rel="noopener noreferrer" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors">+62 857-7675-5884</a>
+                    <p class="font-body-sm text-body-sm text-secondary mt-2 leading-relaxed">Jl. Sudirman Kav. 52-53, SCBD, Jakarta Selatan</p>
+                </div>
             </div>
         </div>
-        <div class="md:col-span-1">
-            <p class="font-body-sm text-body-sm text-secondary mt-auto">
+
+        <!-- Bottom bar -->
+        <div class="mt-12 pt-6 border-t border-outline-variant/50 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <p class="font-body-sm text-body-sm text-secondary text-center sm:text-left">
                 &copy; <?php echo e(date('Y')); ?> Cahaya Interior Sejahtera. All rights reserved.
+            </p>
+            <p class="font-body-sm text-body-sm text-secondary">
+                Jasa Interior Jakarta
             </p>
         </div>
     </div>

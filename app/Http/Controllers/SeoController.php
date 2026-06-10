@@ -25,7 +25,8 @@ class SeoController extends Controller
      */
     public function robots(): Response
     {
-        $sitemapUrl = url('sitemap.xml');
+        // Sitemap URL should not have a locale prefix
+        $sitemapUrl = url('/id/sitemap.xml');
         
         $content = "User-agent: *\n";
         $content .= "Allow: /\n\n";

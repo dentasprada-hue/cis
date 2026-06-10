@@ -3,10 +3,15 @@
 namespace App\Filament\Resources\Projects\Schemas;
 
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Str;
 
 class ProjectForm
 {
@@ -14,37 +19,37 @@ class ProjectForm
     {
         return $schema
             ->components([
-                \Filament\Forms\Components\Section::make('Project Information')
+                Section::make('Project Information')
                     ->description('Provide the core details of the project.')
                     ->schema([
-                        \Filament\Forms\Components\Grid::make(2)->schema([
+                        Grid::make(2)->schema([
                             TextInput::make('title')
                                 ->required()
                                 ->live(onBlur: true)
-                                ->afterStateUpdated(fn (string $operation, $state, $set) => 
-                                    $operation === 'create' ? $set('slug', \Illuminate\Support\Str::slug($state)) : null
+                                ->afterStateUpdated(fn (string $operation, $state, $set) =>
+                                    $operation === 'create' ? $set('slug', Str::slug($state)) : null
                                 ),
                             TextInput::make('slug')
                                 ->required()
                                 ->unique(ignoreRecord: true),
                         ]),
-                        
+
                         Textarea::make('short_description')
                             ->rows(3)
                             ->columnSpanFull()
                             ->maxLength(255)
                             ->helperText('A brief summary used on listing pages.'),
-                            
-                        \Filament\Forms\Components\RichEditor::make('description')
+
+                        RichEditor::make('description')
                             ->columnSpanFull()
                             ->helperText('Detailed case study and architectural descriptions.'),
                     ]),
 
-                \Filament\Forms\Components\Section::make('Project Specifications & Attributes')
+                Section::make('Project Specifications & Attributes')
                     ->description('Key attributes representing scale, location, and categorization.')
                     ->schema([
-                        \Filament\Forms\Components\Grid::make(2)->schema([
-                            \Filament\Forms\Components\Select::make('category')
+                        Grid::make(2)->schema([
+                            Select::make('category')
                                 ->options([
                                     'Residential' => 'Residential',
                                     'Commercial' => 'Commercial',
@@ -70,26 +75,30 @@ class ProjectForm
                             ->default(false),
                     ]),
 
-                \Filament\Forms\Components\Section::make('Project Media')
+                Section::make('Project Media')
                     ->description('Upload high-quality interior images.')
                     ->schema([
                         FileUpload::make('featured_image')
                             ->label('Cover / Featured Image')
                             ->image()
+                            ->disk('public')
                             ->directory('projects/featured')
+                            ->visibility('public')
                             ->imageEditor()
                             ->required(),
                         FileUpload::make('gallery_images')
                             ->label('Gallery Images')
                             ->image()
+                            ->disk('public')
                             ->multiple()
                             ->reorderable()
                             ->directory('projects/gallery')
+                            ->visibility('public')
                             ->imageEditor()
                             ->nullable(),
                     ]),
 
-                \Filament\Forms\Components\Section::make('SEO Settings')
+                Section::make('SEO Settings')
                     ->description('Optimize search engine visibility.')
                     ->schema([
                         TextInput::make('seo_title')

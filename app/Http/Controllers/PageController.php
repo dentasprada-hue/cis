@@ -46,7 +46,7 @@ class PageController extends Controller
     /**
      * Display a single Project Detail page.
      */
-    public function projectDetail($slug)
+    public function projectDetail($locale, $slug)
     {
         $project = Project::where('slug', $slug)->firstOrFail();
         // Fetch related projects (same category, excluding current)
