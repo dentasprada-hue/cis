@@ -12,9 +12,8 @@ document_root = "public"
 [phases.setup]
 nixPkgs = [
   "php84",
-  "php84Extensions.pdo_mysql",
-  "php84Extensions.mysqli",
-  "php84Extensions.mysqlnd",
+  "php84Extensions.pdo_pgsql",
+  "php84Extensions.pgsql",
   "php84Extensions.mbstring",
   "php84Extensions.xml",
   "php84Extensions.tokenizer",
@@ -25,7 +24,6 @@ nixPkgs = [
   "php84Extensions.zip",
   "php84Packages.composer",
   "nodejs_22",
-  "mysql-client",
 ]
 
 [phases.install]
