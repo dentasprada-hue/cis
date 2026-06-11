@@ -20,7 +20,7 @@ Route::prefix('{locale}')->middleware(SetApplicationLocale::class)->group(functi
     Route::get('/robots.txt', [SeoController::class, 'robots'])->name('seo.robots');
 });
 
-// Redirect root to Indonesian
+// Redirect root to English
 Route::get('/', function () {
-    return redirect('/id');
+    return redirect('/en');
 });
