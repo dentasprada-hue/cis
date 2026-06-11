@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "php artisan config:clear && php artisan migrate --force && apache2-foreground",
+    "startCommand": "mysql -h $DB_HOST -P $DB_PORT -u $DB_USERNAME -p$DB_PASSWORD -e \"ALTER USER '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD'; FLUSH PRIVILEGES;\" 2>/dev/null || true && php artisan config:clear && php artisan migrate --force && apache2-foreground",
     "healthcheckPath": "/up",
     "healthcheckTimeout": 300,
     "restartPolicyType": "ON_FAILURE",
