@@ -1,14 +1,3 @@
-provider = "WEB_SERVER"
-
-[webserver]
-base = "apache"
-
-[webserver.php]
-version = "8.4"
-
-[webserver.apache]
-document_root = "public"
-
 [phases.setup]
 nixPkgs = [
   "php84",
