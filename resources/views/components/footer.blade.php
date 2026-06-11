@@ -1,5 +1,5 @@
-<footer class="w-full py-16 md:py-section-gap border-t border-outline-variant bg-background">
-    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<footer class="w-full py-14 md:py-20 border-t border-gray-200 bg-white">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 md:px-16">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
             <!-- Brand -->
             <div class="sm:col-span-2 md:col-span-1">

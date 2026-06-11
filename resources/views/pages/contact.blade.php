@@ -5,17 +5,18 @@
 
 @section('content')
 <!-- Header Section -->
-<header class="pt-[100px] md:pt-[140px] pb-10 md:pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<header class="pt-24 md:pt-32 pb-8 md:pb-14 px-5 sm:px-8 md:px-16 max-w-6xl mx-auto">
     <div class="max-w-3xl">
-        <h1 class="font-headline-xl text-[32px] sm:text-[44px] md:text-headline-xl text-primary mb-4 md:mb-6 leading-tight">{{ __('contact.title') }}</h1>
-        <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+        <h1 class="font-bold text-primary leading-tight mb-4
+                    text-[28px] sm:text-[36px] md:text-[44px]">{{ __('contact.title') }}</h1>
+        <p class="text-secondary leading-relaxed text-sm sm:text-base font-light">
             {{ __('contact.subtitle') }}
         </p>
     </div>
 </header>
 
 <!-- Main Content: Form & Info Split -->
-<main class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pb-12 md:pb-section-gap">
+<main class="px-5 sm:px-8 md:px-16 max-w-6xl mx-auto pb-14 md:pb-24">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-gutter">
         <!-- Left Column: Contact Form -->
         <div class="lg:col-span-7">

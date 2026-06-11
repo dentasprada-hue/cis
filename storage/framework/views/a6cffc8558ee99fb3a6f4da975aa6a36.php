@@ -2,158 +2,161 @@
 <?php $__env->startSection('meta_description', __('about.description')); ?>
 
 <?php $__env->startSection('content'); ?>
-<main class="pt-2 md:pt-4">
-    <!-- Hero Section -->
-    <section class="min-h-[75vh] flex items-center py-10 md:py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-gutter items-center">
-            <div class="md:col-span-6 space-y-4 md:space-y-6 lg:space-y-8">
-                <p class="font-label-sm text-primary-dark tracking-wide uppercase text-sm md:text-base"><?php echo e(__('about.hero_label')); ?></p>
-                <h1 class="font-headline-xl text-[36px] sm:text-[48px] md:text-[52px] lg:text-[60px] text-primary leading-tight max-w-xl">
-                    <?php echo e(__('about.hero_heading')); ?>
+<main class="overflow-x-hidden w-full">
 
-                </h1>
-                <p class="font-body-lg text-secondary max-w-md md:text-lg">
-                    <?php echo e(__('about.hero_description')); ?>
+    <!-- HERO -->
+    <section class="w-full py-10 md:py-20 px-5 sm:px-8 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Text -->
+                <div class="space-y-5 md:space-y-6">
+                    <p class="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-secondary">
+                        <?php echo e(__('about.hero_label')); ?>
 
-                </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-secondary font-body-md text-sm md:text-base pt-2">
-                    <p>• <?php echo e(__('about.trust_projects')); ?></p>
-                    <p>• <?php echo e(__('about.trust_segments')); ?></p>
-                    <p>• <?php echo e(__('about.trust_service')); ?></p>
-                    <p>• <?php echo e(__('about.trust_since')); ?></p>
+                    </p>
+                    <h1 class="font-bold leading-tight text-primary
+                                text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px]">
+                        <?php echo e(__('about.hero_heading')); ?>
+
+                    </h1>
+                    <p class="text-secondary leading-relaxed text-sm sm:text-base md:text-lg font-light">
+                        <?php echo e(__('about.hero_description')); ?>
+
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-secondary text-sm">
+                        <p>• <?php echo e(__('about.trust_projects')); ?></p>
+                        <p>• <?php echo e(__('about.trust_segments')); ?></p>
+                        <p>• <?php echo e(__('about.trust_service')); ?></p>
+                        <p>• <?php echo e(__('about.trust_since')); ?></p>
+                    </div>
+                    <a href="<?php echo e(route('projects')); ?>"
+                       class="inline-block px-7 py-3 bg-primary text-white text-sm font-semibold rounded-lg
+                              hover:bg-gray-800 transition-colors shadow-md">
+                        <?php echo e(__('about.hero_cta')); ?>
+
+                    </a>
                 </div>
-                <a href="<?php echo e(route('projects')); ?>" class="inline-block mt-6 px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300 shadow-lg text-base md:text-lg">
-                    <?php echo e(__('about.hero_cta')); ?>
-
-                </a>
-            </div>
-            <div class="md:col-span-6 flex justify-end">
-                <div class="relative w-full md:w-11/12 lg:w-full max-w-[650px] rounded-xl overflow-hidden shadow-level-1">
-                    <img alt="Premium interior design project by Cahaya Interior Sejahtera" class="w-full h-auto rounded-xl" src="<?php echo e(asset('images/3.png')); ?>">
+                <!-- Image -->
+                <div class="w-full rounded-xl overflow-hidden shadow-xl">
+                    <img alt="Premium interior design project by Cahaya Interior Sejahtera"
+                         class="w-full h-auto object-cover"
+                         src="<?php echo e(asset('images/3.png')); ?>">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Komitmen Kami -->
-    <section class="py-12 md:py-section-gap bg-surface-container-lowest">
-        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-[80px] lg:gap-[120px] items-center">
-                <div class="order-2 md:order-1 h-[240px] sm:h-[360px] md:h-[500px] lg:h-[600px] rounded-xl overflow-hidden shadow-level-1">
-                    <img alt="Material interior premium pilihan Cahaya Interior Sejahtera" class="w-full h-full object-cover" src="<?php echo e(asset('images/4.png')); ?>">
+    <!-- KOMITMEN -->
+    <section class="w-full py-12 md:py-20 px-5 sm:px-8 md:px-16 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+                <div class="h-64 sm:h-80 md:h-[480px] rounded-xl overflow-hidden shadow-xl order-2 md:order-1">
+                    <img alt="Material interior premium pilihan Cahaya Interior Sejahtera"
+                         class="w-full h-full object-cover"
+                         src="<?php echo e(asset('images/4.png')); ?>">
                 </div>
-                <div class="order-1 md:order-2 space-y-5 md:space-y-8">
+                <div class="space-y-5 order-1 md:order-2">
                     <div class="w-12 h-1 bg-primary"></div>
-                    <h2 class="font-headline-lg text-[26px] sm:text-[34px] md:text-headline-lg text-primary leading-tight">
+                    <h2 class="font-bold text-primary leading-tight
+                                text-[24px] sm:text-[30px] md:text-[38px]">
                         <?php echo e(__('about.commitment_title')); ?>
 
                     </h2>
-                    <div class="font-body-lg text-body-lg text-secondary">
-                        <p><?php echo e(__('about.commitment')); ?></p>
-                    </div>
+                    <p class="text-secondary leading-relaxed text-sm sm:text-base font-light">
+                        <?php echo e(__('about.commitment')); ?>
+
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Vision & Mission -->
-    <section class="py-12 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-        <div class="text-center mb-10 md:mb-16 space-y-3 md:space-y-4">
-            <h2 class="font-headline-lg text-[26px] sm:text-[34px] md:text-headline-lg text-primary leading-tight"><?php echo e(__('about.vision_title')); ?> & <?php echo e(__('about.mission_title')); ?></h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-gutter">
-            <div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-level-1 border border-outline-variant/20 hover:shadow-lg transition-shadow duration-300">
-                <span class="material-symbols-outlined text-4xl text-primary mb-5 md:mb-6 block">visibility</span>
-                <h3 class="font-headline-md text-[22px] md:text-headline-md text-primary mb-3 md:mb-4"><?php echo e(__('about.vision_title')); ?></h3>
-                <p class="font-body-md text-body-md text-secondary leading-relaxed"><?php echo e(__('about.vision')); ?></p>
-            </div>
-            <div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-level-1 border border-outline-variant/20 hover:shadow-lg transition-shadow duration-300">
-                <span class="material-symbols-outlined text-4xl text-primary mb-5 md:mb-6 block">flag</span>
-                <h3 class="font-headline-md text-[22px] md:text-headline-md text-primary mb-3 md:mb-4"><?php echo e(__('about.mission_title')); ?></h3>
-                <ul class="font-body-md text-body-md text-secondary leading-relaxed space-y-2">
-                    <li>• <?php echo e(__('about.mission_1')); ?></li>
-                    <li>• <?php echo e(__('about.mission_2')); ?></li>
-                    <li>• <?php echo e(__('about.mission_3')); ?></li>
-                    <li>• <?php echo e(__('about.mission_4')); ?></li>
-                </ul>
+    <!-- VISI & MISI -->
+    <section class="w-full py-12 md:py-20 px-5 sm:px-8 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-bold text-primary text-center leading-tight mb-10 md:mb-14
+                        text-[24px] sm:text-[30px] md:text-[38px]">
+                <?php echo e(__('about.vision_title')); ?> & <?php echo e(__('about.mission_title')); ?>
+
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div class="bg-white p-7 md:p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-5 block">visibility</span>
+                    <h3 class="font-bold text-primary mb-3 text-xl md:text-2xl"><?php echo e(__('about.vision_title')); ?></h3>
+                    <p class="text-secondary leading-relaxed text-sm sm:text-base font-light"><?php echo e(__('about.vision')); ?></p>
+                </div>
+                <div class="bg-white p-7 md:p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-5 block">flag</span>
+                    <h3 class="font-bold text-primary mb-3 text-xl md:text-2xl"><?php echo e(__('about.mission_title')); ?></h3>
+                    <ul class="text-secondary leading-relaxed text-sm sm:text-base font-light space-y-2">
+                        <li>• <?php echo e(__('about.mission_1')); ?></li>
+                        <li>• <?php echo e(__('about.mission_2')); ?></li>
+                        <li>• <?php echo e(__('about.mission_3')); ?></li>
+                        <li>• <?php echo e(__('about.mission_4')); ?></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Layanan Kami -->
-    <section class="py-12 md:py-section-gap bg-surface-container-lowest border-y border-outline-variant/20">
-        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-            <!-- Banner foto ke-5 -->
-            <div class="w-full h-48 sm:h-64 md:h-80 rounded-2xl overflow-hidden shadow-level-1 mb-12 md:mb-20">
+    <!-- LAYANAN -->
+    <section class="w-full py-12 md:py-20 px-5 sm:px-8 md:px-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <!-- Banner foto -->
+            <div class="w-full h-40 sm:h-56 md:h-72 rounded-2xl overflow-hidden shadow-xl mb-10 md:mb-16">
                 <img alt="Proyek interior kantor modern oleh Cahaya Interior Sejahtera"
                      class="w-full h-full object-cover object-center"
                      src="<?php echo e(asset('images/5.png')); ?>">
             </div>
-            <h2 class="font-headline-lg text-[26px] sm:text-[34px] md:text-headline-lg text-primary text-center mb-10 md:mb-16 leading-tight"><?php echo e(__('about.services_title')); ?></h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-gutter">
-                <div class="text-center space-y-4 md:space-y-6">
-                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-surface flex items-center justify-center shadow-level-1">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl text-primary">home</span>
+            <h2 class="font-bold text-primary text-center leading-tight mb-10 md:mb-14
+                        text-[24px] sm:text-[30px] md:text-[38px]">
+                <?php echo e(__('about.services_title')); ?>
+
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::openLoop(); ?><?php endif; ?><?php $__currentLoopData = [
+                    ['icon'=>'home',        'label'=>__('about.service_1')],
+                    ['icon'=>'business',    'label'=>__('about.service_2')],
+                    ['icon'=>'chair',       'label'=>__('about.service_3')],
+                    ['icon'=>'kitchen',     'label'=>__('about.service_4')],
+                    ['icon'=>'grid_view',   'label'=>__('about.service_5')],
+                    ['icon'=>'construction','label'=>__('about.service_6')],
+                ]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $svc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::startLoopIteration(); ?><?php endif; ?>
+                <div class="text-center space-y-3 md:space-y-4">
+                    <div class="w-14 h-14 md:w-18 md:h-18 mx-auto rounded-full bg-white flex items-center justify-center shadow-md">
+                        <span class="material-symbols-outlined text-2xl text-primary"><?php echo e($svc['icon']); ?></span>
                     </div>
-                    <h4 class="font-headline-sm text-[18px] md:text-headline-sm text-primary"><?php echo e(__('about.service_1')); ?></h4>
+                    <h4 class="font-semibold text-primary text-sm sm:text-base md:text-lg leading-snug"><?php echo e($svc['label']); ?></h4>
                 </div>
-                <div class="text-center space-y-4 md:space-y-6">
-                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-surface flex items-center justify-center shadow-level-1">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl text-primary">business</span>
-                    </div>
-                    <h4 class="font-headline-sm text-[18px] md:text-headline-sm text-primary"><?php echo e(__('about.service_2')); ?></h4>
+                <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::endLoop(); ?><?php endif; ?><?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::closeLoop(); ?><?php endif; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTIK -->
+    <section class="w-full py-12 md:py-20 px-5 sm:px-8 md:px-16 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="py-4">
+                    <div class="font-bold text-primary mb-1 text-4xl md:text-5xl">150+</div>
+                    <div class="text-secondary text-xs sm:text-sm uppercase tracking-wider font-medium"><?php echo e(__('about.stats_projects')); ?></div>
                 </div>
-                <div class="text-center space-y-4 md:space-y-6">
-                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-surface flex items-center justify-center shadow-level-1">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl text-primary">chair</span>
-                    </div>
-                    <h4 class="font-headline-sm text-[18px] md:text-headline-sm text-primary"><?php echo e(__('about.service_3')); ?></h4>
+                <div class="py-4">
+                    <div class="font-bold text-primary mb-1 text-4xl md:text-5xl">120+</div>
+                    <div class="text-secondary text-xs sm:text-sm uppercase tracking-wider font-medium"><?php echo e(__('about.stats_satisfaction')); ?></div>
                 </div>
-                <div class="text-center space-y-4 md:space-y-6">
-                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-surface flex items-center justify-center shadow-level-1">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl text-primary">kitchen</span>
-                    </div>
-                    <h4 class="font-headline-sm text-[18px] md:text-headline-sm text-primary"><?php echo e(__('about.service_4')); ?></h4>
+                <div class="py-4">
+                    <div class="font-bold text-primary mb-1 text-4xl md:text-5xl">15</div>
+                    <div class="text-secondary text-xs sm:text-sm uppercase tracking-wider font-medium"><?php echo e(__('about.stats_team')); ?></div>
                 </div>
-                <div class="text-center space-y-4 md:space-y-6">
-                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-surface flex items-center justify-center shadow-level-1">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl text-primary">grid_view</span>
-                    </div>
-                    <h4 class="font-headline-sm text-[18px] md:text-headline-sm text-primary"><?php echo e(__('about.service_5')); ?></h4>
-                </div>
-                <div class="text-center space-y-4 md:space-y-6">
-                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-surface flex items-center justify-center shadow-level-1">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl text-primary">construction</span>
-                    </div>
-                    <h4 class="font-headline-sm text-[18px] md:text-headline-sm text-primary"><?php echo e(__('about.service_6')); ?></h4>
+                <div class="py-4">
+                    <div class="font-bold text-primary mb-1 text-4xl md:text-5xl">100%</div>
+                    <div class="text-secondary text-xs sm:text-sm uppercase tracking-wider font-medium"><?php echo e(__('about.stats_quality')); ?></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Statistics -->
-    <section class="py-12 md:py-section-gap bg-surface border-t border-outline-variant/20">
-        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-gutter text-center">
-                <div class="py-6 md:py-0 px-2 md:px-4 border-b md:border-b-0 md:border-r border-outline-variant/30">
-                    <div class="font-headline-xl text-[36px] md:text-headline-xl text-primary mb-1 md:mb-2">150+</div>
-                    <div class="font-label-lg text-[12px] md:text-label-lg text-secondary"><?php echo e(__('about.stats_projects')); ?></div>
-                </div>
-                <div class="py-6 md:py-0 px-2 md:px-4 border-b md:border-b-0 md:border-r border-outline-variant/30">
-                    <div class="font-headline-xl text-[36px] md:text-headline-xl text-primary mb-1 md:mb-2">120+</div>
-                    <div class="font-label-lg text-[12px] md:text-label-lg text-secondary"><?php echo e(__('about.stats_satisfaction')); ?></div>
-                </div>
-                <div class="py-6 md:py-0 px-2 md:px-4 md:border-r border-outline-variant/30">
-                    <div class="font-headline-xl text-[36px] md:text-headline-xl text-primary mb-1 md:mb-2">15</div>
-                    <div class="font-label-lg text-[12px] md:text-label-lg text-secondary"><?php echo e(__('about.stats_team')); ?></div>
-                </div>
-                <div class="py-6 md:py-0 px-2 md:px-4">
-                    <div class="font-headline-xl text-[36px] md:text-headline-xl text-primary mb-1 md:mb-2">100%</div>
-                    <div class="font-label-lg text-[12px] md:text-label-lg text-secondary"><?php echo e(__('about.stats_quality')); ?></div>
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
 <?php $__env->stopSection(); ?>
 
