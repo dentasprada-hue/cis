@@ -1,11 +1,35 @@
-# Extend default Nixpacks packages with mysqlnd-backed pdo_mysql (required for Railway MySQL 8.4+)
+provider = "WEB_SERVER"
+
+[webserver]
+base = "apache"
+enable_https = true
+
+[webserver.php]
+version = "8.4" # Explicitly setting PHP version
+
+[webserver.apache]
+document_root = "public"
+
 [phases.setup]
 nixPkgs = [
-  "...",
   "php84Extensions.pdo_mysql",
   "php84Extensions.mysqli",
 ]
 
-# Remove .env created by composer install — Railway injects env vars at runtime
 [phases.install]
-cmds = ["...", "rm -f .env"]
+cmds = [
+    "composer install --no-dev --no-interaction --prefer-dist",
+    "npm install",
+    "npm run build", # Assuming 'npm run build' exists and builds frontend assets
+    "rm -f .env" # Railway injects env vars at runtime
+]
+
+[build]
+commands = [
+    "php artisan config:clear", # Clear config before build
+    "php artisan cache:clear",  # Clear cache
+    "php artisan view:clear",   # Clear view cache
+]
+
+[start]
+cmd = "apache2-foreground" # Explicitly starting Apache
