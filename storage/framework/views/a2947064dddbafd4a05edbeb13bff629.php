@@ -2,41 +2,30 @@
 <?php $__env->startSection('meta_description', 'Lihat portofolio proyek desain interior Cahaya Interior Sejahtera. Interior rumah, kantor, furniture custom, kitchen set, dan renovasi interior.'); ?>
 
 <?php $__env->startSection('content'); ?>
-<main class="pt-16 md:pt-24 pb-16 md:pb-section-gap">
+<main class="pt-16 md:pt-24 pb-16 md:pb-24">
     <!-- Hero Header -->
-    <header class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-8 md:mb-16">
-        <h1 class="font-headline-xl text-[32px] sm:text-[44px] md:text-headline-xl text-primary mb-4 md:mb-6 max-w-3xl leading-tight"><?php echo e(__('projects.title')); ?></h1>
-        <p class="font-body-lg text-body-lg text-secondary max-w-2xl"><?php echo e(__('projects.subtitle')); ?></p>
+    <header class="max-w-6xl mx-auto px-5 sm:px-8 md:px-16 mb-8 md:mb-14">
+        <h1 class="font-bold text-primary leading-tight mb-3
+                    text-[28px] sm:text-[36px] md:text-[44px]"><?php echo e(__('projects.title')); ?></h1>
+        <p class="text-secondary text-sm sm:text-base font-light max-w-2xl"><?php echo e(__('projects.subtitle')); ?></p>
     </header>
 
-    <!-- Filters Container -->
-    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-8 md:mb-gutter sticky top-[68px] md:top-[80px] z-40 bg-surface-container-lowest/90 backdrop-blur-md py-4 shadow-sm">
-        <div class="overflow-x-auto -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0">
-            <ul class="flex gap-5 md:gap-8 pb-2 min-w-max md:min-w-0 md:flex-wrap">
-                <li>
-                    <a href="<?php echo e(route('projects')); ?>" class="font-label-lg text-label-lg whitespace-nowrap <?php echo e(!$category ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?> pb-2 px-1 transition-all"><?php echo e(__('projects.all')); ?></a>
-                </li>
-                <li>
-                    <a href="<?php echo e(route('projects', ['category' => 'Residential'])); ?>" class="font-label-lg text-label-lg whitespace-nowrap <?php echo e($category === 'Residential' ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?> pb-2 px-1 transition-all"><?php echo e(__('projects.residential')); ?></a>
-                </li>
-                <li>
-                    <a href="<?php echo e(route('projects', ['category' => 'Commercial'])); ?>" class="font-label-lg text-label-lg whitespace-nowrap <?php echo e($category === 'Commercial' ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?> pb-2 px-1 transition-all"><?php echo e(__('projects.commercial')); ?></a>
-                </li>
-                <li>
-                    <a href="<?php echo e(route('projects', ['category' => 'Office'])); ?>" class="font-label-lg text-label-lg whitespace-nowrap <?php echo e($category === 'Office' ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?> pb-2 px-1 transition-all"><?php echo e(__('projects.office')); ?></a>
-                </li>
-                <li>
-                    <a href="<?php echo e(route('projects', ['category' => 'Hospitality'])); ?>" class="font-label-lg text-label-lg whitespace-nowrap <?php echo e($category === 'Hospitality' ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?> pb-2 px-1 transition-all"><?php echo e(__('projects.hospitality')); ?></a>
-                </li>
+    <!-- Filters -->
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 md:px-16 mb-8 sticky top-[60px] z-40 bg-white/95 backdrop-blur-md py-3 shadow-sm">
+        <div class="overflow-x-auto">
+            <ul class="flex gap-5 md:gap-8 pb-2 min-w-max md:min-w-0">
+                <li><a href="<?php echo e(route('projects')); ?>" class="text-sm font-semibold whitespace-nowrap pb-2 px-1 transition-all <?php echo e(!$category ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?>"><?php echo e(__('projects.all')); ?></a></li>
+                <li><a href="<?php echo e(route('projects', ['category' => 'Residential'])); ?>" class="text-sm font-semibold whitespace-nowrap pb-2 px-1 transition-all <?php echo e($category === 'Residential' ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?>"><?php echo e(__('projects.residential')); ?></a></li>
+                <li><a href="<?php echo e(route('projects', ['category' => 'Commercial'])); ?>" class="text-sm font-semibold whitespace-nowrap pb-2 px-1 transition-all <?php echo e($category === 'Commercial' ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?>"><?php echo e(__('projects.commercial')); ?></a></li>
+                <li><a href="<?php echo e(route('projects', ['category' => 'Office'])); ?>" class="text-sm font-semibold whitespace-nowrap pb-2 px-1 transition-all <?php echo e($category === 'Office' ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?>"><?php echo e(__('projects.office')); ?></a></li>
+                <li><a href="<?php echo e(route('projects', ['category' => 'Hospitality'])); ?>" class="text-sm font-semibold whitespace-nowrap pb-2 px-1 transition-all <?php echo e($category === 'Hospitality' ? 'text-primary border-b-2 border-primary' : 'text-secondary hover:text-primary'); ?>"><?php echo e(__('projects.hospitality')); ?></a></li>
             </ul>
         </div>
     </div>
 
-
-
-    <!-- Grid Gallery (Identical Heights & Aligned Rows) -->
-    <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 md:mb-24">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-gutter">
+    <!-- Grid -->
+    <section class="max-w-6xl mx-auto px-5 sm:px-8 md:px-16 mb-16 md:mb-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
             <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::openLoop(); ?><?php endif; ?><?php $__currentLoopData = $projects; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::startLoopIteration(); ?><?php endif; ?>
             <article class="bg-surface-container-lowest rounded-card overflow-hidden shadow-level-1 hover:shadow-level-2 transition-shadow duration-300 group cursor-pointer border border-surface-variant/30 h-full flex flex-col">
                 <a href="<?php echo e(route('projects.detail', ['slug' => $project->slug])); ?>" class="h-full flex flex-col flex-grow">

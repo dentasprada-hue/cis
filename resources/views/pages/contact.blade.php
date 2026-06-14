@@ -95,9 +95,9 @@
                 <div>
                     <h4 class="font-label-lg text-label-lg text-secondary uppercase tracking-widest mb-2">{{ __('contact.corporate_office') }}</h4>
                     <p class="font-body-lg text-body-lg text-primary leading-relaxed">
-                        Jl. Sudirman Kav. 52-53<br>
-                        Sudirman Central Business District (SCBD)<br>
-                        Jakarta Selatan, 12190
+                        Jl. Griya Alam Sentosa No.A6<br>
+                        Pasir Angin, Kec. Bantar Gebang<br>
+                        Kabupaten Bogor, Jawa Barat 16820
                     </p>
                 </div>
                 <div>

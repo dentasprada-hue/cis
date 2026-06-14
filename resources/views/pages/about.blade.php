@@ -132,11 +132,11 @@
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div class="py-4">
-                    <div class="font-bold text-primary mb-1 text-4xl md:text-5xl">150+</div>
+                    <div class="font-bold text-primary mb-1 text-4xl md:text-5xl">200+</div>
                     <div class="text-secondary text-xs sm:text-sm uppercase tracking-wider font-medium">{{ __('about.stats_projects') }}</div>
                 </div>
                 <div class="py-4">
-                    <div class="font-bold text-primary mb-1 text-4xl md:text-5xl">120+</div>
+                    <div class="font-bold text-primary mb-1 text-4xl md:text-5xl">200+</div>
                     <div class="text-secondary text-xs sm:text-sm uppercase tracking-wider font-medium">{{ __('about.stats_satisfaction') }}</div>
                 </div>
                 <div class="py-4">

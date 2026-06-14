@@ -151,7 +151,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div class="py-4">
-                    <div class="font-headline-xl text-primary mb-1 text-4xl md:text-headline-xl">50+</div>
+                    <div class="font-headline-xl text-primary mb-1 text-4xl md:text-headline-xl">200+</div>
                     <div class="font-label-md text-label-md text-secondary uppercase tracking-wider">{{ __('home.stat_1_label') }}</div>
                 </div>
                 <div class="py-4">

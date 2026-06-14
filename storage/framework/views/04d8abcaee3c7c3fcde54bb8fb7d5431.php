@@ -3,10 +3,11 @@
 
 <?php $__env->startSection('content'); ?>
 <!-- Header Section -->
-<header class="pt-[100px] md:pt-[140px] pb-10 md:pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<header class="pt-24 md:pt-32 pb-8 md:pb-14 px-5 sm:px-8 md:px-16 max-w-6xl mx-auto">
     <div class="max-w-3xl">
-        <h1 class="font-headline-xl text-[32px] sm:text-[44px] md:text-headline-xl text-primary mb-4 md:mb-6 leading-tight"><?php echo e(__('contact.title')); ?></h1>
-        <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+        <h1 class="font-bold text-primary leading-tight mb-4
+                    text-[28px] sm:text-[36px] md:text-[44px]"><?php echo e(__('contact.title')); ?></h1>
+        <p class="text-secondary leading-relaxed text-sm sm:text-base font-light">
             <?php echo e(__('contact.subtitle')); ?>
 
         </p>
@@ -14,7 +15,7 @@
 </header>
 
 <!-- Main Content: Form & Info Split -->
-<main class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pb-12 md:pb-section-gap">
+<main class="px-5 sm:px-8 md:px-16 max-w-6xl mx-auto pb-14 md:pb-24">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-gutter">
         <!-- Left Column: Contact Form -->
         <div class="lg:col-span-7">
@@ -166,9 +167,9 @@ unset($__errorArgs, $__bag); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendB
                 <div>
                     <h4 class="font-label-lg text-label-lg text-secondary uppercase tracking-widest mb-2"><?php echo e(__('contact.corporate_office')); ?></h4>
                     <p class="font-body-lg text-body-lg text-primary leading-relaxed">
-                        Jl. Sudirman Kav. 52-53<br>
-                        Sudirman Central Business District (SCBD)<br>
-                        Jakarta Selatan, 12190
+                        Jl. Griya Alam Sentosa No.A6<br>
+                        Pasir Angin, Kec. Bantar Gebang<br>
+                        Kabupaten Bogor, Jawa Barat 16820
                     </p>
                 </div>
                 <div>

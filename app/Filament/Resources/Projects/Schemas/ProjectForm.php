@@ -95,6 +95,8 @@ class ProjectForm
                             ->directory('projects/gallery')
                             ->visibility('public')
                             ->imageEditor()
+                            ->maxFiles(8)
+                            ->helperText('Upload up to 8 images (click + to add more)')
                             ->nullable(),
                     ]),
 

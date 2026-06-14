@@ -12,27 +12,28 @@
                  src="<?php echo e(asset('images/5.png')); ?>">
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
-        <div class="relative z-10 w-full px-5 sm:px-8 md:px-16 text-center py-20">
+        <div class="relative z-10 w-full px-5 sm:px-8 md:px-16 text-center pt-28 pb-16 md:py-24">
             <div class="max-w-3xl mx-auto">
-                <h1 class="font-headline-xl text-white drop-shadow-lg mb-4 md:mb-6 leading-tight
-                            text-3xl sm:text-4xl md:text-5xl lg:text-headline-xl">
+                <h1 class="text-white drop-shadow-lg mb-5 md:mb-6 leading-tight font-bold
+                            text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px]">
                     <?php echo e(__('home.hero_title')); ?>
 
                 </h1>
-                <p class="font-body-lg text-body-lg text-white/90 leading-relaxed mb-8 md:mb-10 max-w-xl mx-auto">
+                <p class="text-white/90 leading-relaxed mb-8 md:mb-10 max-w-xl mx-auto
+                           text-sm sm:text-base md:text-lg font-light">
                     <?php echo e(__('home.hero_subtitle')); ?>
 
                 </p>
-                <div class="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
+                <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
                     <a href="https://wa.me/6285776755884" target="_blank" rel="noopener noreferrer"
-                       class="px-8 py-3 bg-white text-primary rounded font-label-lg text-label-lg
-                              hover:bg-surface-variant transition-colors shadow-[0px_12px_40px_rgba(0,0,0,0.08)] text-center">
+                       class="w-full sm:w-auto px-8 py-3 bg-white text-black rounded font-medium text-sm tracking-wide
+                              hover:bg-gray-100 transition-colors shadow-lg text-center">
                         <?php echo e(__('home.hero_cta_primary')); ?>
 
                     </a>
                     <a href="<?php echo e(route('projects')); ?>"
-                       class="px-8 py-3 bg-transparent text-white border border-white/70 rounded
-                              font-label-lg text-label-lg hover:bg-white/10 transition-colors text-center">
+                       class="w-full sm:w-auto px-8 py-3 bg-transparent text-white border border-white/70 rounded
+                              font-medium text-sm tracking-wide hover:bg-white/10 transition-colors text-center">
                         <?php echo e(__('home.hero_cta_secondary')); ?>
 
                     </a>
@@ -160,7 +161,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div class="py-4">
-                    <div class="font-headline-xl text-primary mb-1 text-4xl md:text-headline-xl">50+</div>
+                    <div class="font-headline-xl text-primary mb-1 text-4xl md:text-headline-xl">200+</div>
                     <div class="font-label-md text-label-md text-secondary uppercase tracking-wider"><?php echo e(__('home.stat_1_label')); ?></div>
                 </div>
                 <div class="py-4">

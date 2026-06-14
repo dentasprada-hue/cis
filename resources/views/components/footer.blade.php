@@ -51,7 +51,7 @@
                 <div class="flex flex-col gap-2">
                     <a href="mailto:cahayainteriorsejahtera@gmail.com" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors break-all">cahayainteriorsejahtera@gmail.com</a>
                     <a href="https://wa.me/6285776755884" target="_blank" rel="noopener noreferrer" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors">+62 857-7675-5884</a>
-                    <p class="font-body-sm text-body-sm text-secondary mt-2 leading-relaxed">Jl. Sudirman Kav. 52-53, SCBD, Jakarta Selatan</p>
+                    <p class="font-body-sm text-body-sm text-secondary mt-2 leading-relaxed">Jl. Griya Alam Sentosa No.A6, Pasir Angin, Kec. Bantar Gebang, Kabupaten Bogor, Jawa Barat 16820</p>
                 </div>
             </div>
         </div>

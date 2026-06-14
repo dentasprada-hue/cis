@@ -232,10 +232,10 @@
       "priceRange": "$$$",
       "address": {
         "@@type": "PostalAddress",
-        "streetAddress": "Jl. Sudirman Kav. 52-53, Sudirman Central Business District (SCBD)",
-        "addressLocality": "Jakarta Selatan",
-        "addressRegion": "DKI Jakarta",
-        "postalCode": "12190",
+        "streetAddress": "Jl. Griya Alam Sentosa No.A6, Pasir Angin, Kec. Bantar Gebang",
+        "addressLocality": "Kabupaten Bogor",
+        "addressRegion": "Jawa Barat",
+        "postalCode": "16820",
         "addressCountry": "ID"
       },
       "geo": {
