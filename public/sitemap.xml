@@ -64,4 +64,132 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
             </url>
+    <url>
+    <loc>http://127.0.0.1:8000/id/projects/the-glass-pavilion-estate</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/the-glass-pavilion-estate" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/the-glass-pavilion-estate" />
+    <lastmod>2026-06-14T04:10:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/en/projects/the-glass-pavilion-estate</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/the-glass-pavilion-estate" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/the-glass-pavilion-estate" />
+    <lastmod>2026-06-14T04:10:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/id/projects/the-serene-penthouse</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/the-serene-penthouse" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/the-serene-penthouse" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/en/projects/the-serene-penthouse</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/the-serene-penthouse" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/the-serene-penthouse" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/id/projects/villa-lumina</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/villa-lumina" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/villa-lumina" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/en/projects/villa-lumina</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/villa-lumina" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/villa-lumina" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/id/projects/aura-executive-suites</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/aura-executive-suites" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/aura-executive-suites" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/en/projects/aura-executive-suites</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/aura-executive-suites" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/aura-executive-suites" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/id/projects/kemang-residence</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/kemang-residence" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/kemang-residence" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/en/projects/kemang-residence</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/kemang-residence" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/kemang-residence" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/id/projects/the-luminary-hotel</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/the-luminary-hotel" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/the-luminary-hotel" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/en/projects/the-luminary-hotel</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/the-luminary-hotel" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/the-luminary-hotel" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/id/projects/menteng-heritage</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/menteng-heritage" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/menteng-heritage" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/en/projects/menteng-heritage</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/menteng-heritage" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/menteng-heritage" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/id/projects/nexus-tech-hq</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/nexus-tech-hq" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/nexus-tech-hq" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/en/projects/nexus-tech-hq</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="http://127.0.0.1:8000/id/projects/nexus-tech-hq" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/projects/nexus-tech-hq" />
+    <lastmod>2026-06-10T14:47:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
 </urlset>

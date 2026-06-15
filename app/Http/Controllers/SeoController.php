@@ -14,8 +14,9 @@ class SeoController extends Controller
     {
         $staticPath = public_path('sitemap.xml');
         if (file_exists($staticPath)) {
-            return response(file_get_contents($staticPath), 200)
-                ->header('Content-Type', 'application/xml');
+            return response()->file($staticPath, [
+                'Content-Type' => 'application/xml',
+            ]);
         }
 
         $projects = Project::orderBy('updated_at', 'desc')->get();
