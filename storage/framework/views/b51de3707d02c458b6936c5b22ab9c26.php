@@ -209,5 +209,13 @@
 <?php unset($__componentOriginal8a8716efb3c62a45938aca52e78e0322); ?>
 <?php endif; ?>
 
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(r) {
+                r.forEach(function(reg) { reg.unregister(); });
+            });
+        }
+    </script>
 </body>
 </html><?php /**PATH C:\Users\ridwa\cis\resources\views/layouts/app.blade.php ENDPATH**/ ?>

@@ -167,5 +167,13 @@
     <!-- Footer -->
     <x-footer />
 
+    {{-- Unregister stale service workers --}}
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(r) {
+                r.forEach(function(reg) { reg.unregister(); });
+            });
+        }
+    </script>
 </body>
 </html>
