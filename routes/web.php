@@ -21,5 +21,5 @@ Route::prefix('{locale}')->middleware(SetApplicationLocale::class)->group(functi
 
 // Redirect root to English
 Route::get('/', function () {
-    return redirect('/en');
+    return redirect('/id');
 });
