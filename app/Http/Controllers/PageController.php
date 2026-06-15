@@ -72,10 +72,11 @@ class PageController extends Controller
     public function submitContact(Request $request)
     {
         $validated = $request->validate([
-            'firstName' => 'required|string|max:50',
-            'lastName' => 'required|string|max:50',
+            'full_name' => 'required|string|max:100',
             'email' => 'required|email|max:100',
-            'subject' => 'required|string|max:150',
+            'phone' => 'required|string|max:20',
+            'project_type' => 'required|string|max:100',
+            'project_location' => 'required|string|max:200',
             'message' => 'required|string|max:2000',
         ]);
 

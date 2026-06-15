@@ -22,7 +22,7 @@
 @endsection
 
 @section('content')
-<!-- Hero Section -->
+<!-- Hero Section (unchanged width/structure) -->
 <section class="relative h-[300px] sm:h-[420px] md:h-[560px] lg:h-[700px] overflow-hidden">
     <div class="absolute inset-0">
         <img alt="{{ $project->title }}" class="w-full h-full object-cover" src="{{ $project->featured_image_url }}">
@@ -35,27 +35,46 @@
                 <span class="w-1 h-1 rounded-full bg-white/50"></span>
                 <span class="font-label-md text-label-md text-white/80">{{ $project->year }}</span>
             </div>
-            <h1 class="font-headline-xl text-[28px] sm:text-[40px] md:text-headline-xl text-white mb-3 md:mb-4 leading-tight">{{ $project->title }}</h1>
-            <p class="font-body-lg text-[15px] md:text-body-lg text-white/90 max-w-2xl line-clamp-3 md:line-clamp-none">{{ $project->short_description }}</p>
+            <h1 class="font-headline-xl text-[28px] sm:text-[40px] md:text-headline-xl text-white mb-3 md:mb-4 leading-tight">{{ $project->concept ?? $project->title }}</h1>
+            @if($project->concept && $project->function)
+            <p class="font-body-md text-body-md text-white/80 mb-3 md:mb-4">{{ $project->function }}</p>
+            @endif
         </div>
     </div>
 </section>
 
-<!-- Project Details -->
+<!-- Split Section: Gallery (left) + Details Card (right, sticky) -->
+@if($project->gallery_images && count($project->gallery_images) > 0)
 <section class="py-12 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-gutter">
-        <!-- Main Content -->
-        <div class="md:col-span-8 order-2 md:order-1">
-            <div class="prose prose-lg max-w-none">
-                {!! $project->description !!}
+        <!-- Left: Gallery Grid -->
+        <div class="md:col-span-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-gutter">
+                @foreach($project->gallery_image_urls as $image)
+                <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-level-1">
+                    <img alt="{{ $project->title }} gallery image" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="{{ $image }}">
+                </div>
+                @endforeach
             </div>
         </div>
 
-        <!-- Sidebar Info -->
-        <div class="md:col-span-4 order-1 md:order-2">
+        <!-- Right: Project Details Card (sticky) -->
+        <div class="md:col-span-4">
             <div class="bg-surface-container-lowest p-6 md:p-8 rounded-xl shadow-level-1 md:sticky md:top-[100px]">
                 <h3 class="font-headline-md text-[22px] md:text-headline-md text-primary mb-5 md:mb-6">{{ __('projects.detail_sidebar_title') }}</h3>
-                <div class="grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-6">
+                <div class="space-y-5 md:space-y-6">
+                    @if($project->concept)
+                    <div>
+                        <p class="font-label-md text-label-md text-secondary mb-1">{{ __('projects.detail_concept') }}</p>
+                        <p class="font-body-md text-body-md text-primary">{{ $project->concept }}</p>
+                    </div>
+                    @endif
+                    @if($project->function)
+                    <div>
+                        <p class="font-label-md text-label-md text-secondary mb-1">{{ __('projects.detail_function') }}</p>
+                        <p class="font-body-md text-body-md text-primary">{{ $project->function }}</p>
+                    </div>
+                    @endif
                     <div>
                         <p class="font-label-md text-label-md text-secondary mb-1">{{ __('projects.detail_location') }}</p>
                         <p class="font-body-md text-body-md text-primary">{{ $project->location }}</p>
@@ -82,26 +101,11 @@
         </div>
     </div>
 </section>
-
-<!-- Gallery -->
-@if($project->gallery_images && count($project->gallery_images) > 0)
-<section class="py-12 md:py-section-gap bg-surface-container-lowest">
-    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-        <h2 class="font-headline-lg text-[26px] md:text-headline-lg text-primary mb-8 md:mb-12">{{ __('projects.detail_gallery') }}</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-gutter">
-            @foreach($project->gallery_image_urls as $image)
-            <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-level-1">
-                <img alt="{{ $project->title }} gallery image" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="{{ $image }}">
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
 @endif
 
 <!-- Related Projects -->
 @if($relatedProjects && count($relatedProjects) > 0)
-<section class="py-12 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<section class="py-12 md:py-section-gap bg-surface-container-lowest px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-3 mb-8 md:mb-12">
         <div>
             <h2 class="font-headline-lg text-[26px] md:text-headline-lg text-primary mb-1 md:mb-2">{{ __('projects.detail_related') }}</h2>

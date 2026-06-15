@@ -1,69 +1,108 @@
-<footer class="w-full py-14 md:py-20 border-t border-gray-200 bg-white">
-    <div class="max-w-6xl mx-auto px-5 sm:px-8 md:px-16">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-            <!-- Brand -->
-            <div class="sm:col-span-2 md:col-span-1">
-                <div class="font-headline-sm text-[20px] md:text-headline-sm text-primary mb-3 leading-tight">
-                    Cahaya Interior Sejahtera
-                </div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                    Jasa desain dan pengerjaan interior untuk rumah, kantor, dan ruang komersial.
+<footer class="w-full bg-surface-container-low border-t border-outline-variant/30">
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-8 md:px-16 py-14 md:py-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
+            <div class="sm:col-span-2 lg:col-span-1">
+                <p class="font-headline-sm text-headline-sm leading-tight">
+                    <span class="text-premium-brass">Cahaya Interior</span><br>
+                    <span class="text-primary">Sejahtera</span>
+                </p>
+                <div class="w-12 h-0.5 bg-premium-brass mt-3 mb-4"></div>
+                <p class="font-body-sm text-body-sm text-secondary leading-relaxed">
+                    {{ __('footer.description') }}
                 </p>
             </div>
 
-            <!-- Navigation Links -->
             <div>
-                <h4 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Halaman</h4>
+                <h4 class="font-label-lg text-label-lg text-primary uppercase tracking-[0.15em]">{{ __('footer.navigation') }}</h4>
+                <div class="w-8 h-0.5 bg-premium-brass mt-1.5 mb-5"></div>
                 <ul class="flex flex-col gap-3">
-                    <li><a href="{{ route('home') }}" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors">{{ __('nav.home') }}</a></li>
-                    <li><a href="{{ route('about') }}" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors">{{ __('nav.about') }}</a></li>
-                    <li><a href="{{ route('projects') }}" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors">{{ __('nav.projects') }}</a></li>
-                    <li><a href="{{ route('contact') }}" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors">{{ __('nav.contact') }}</a></li>
+                    <li><a href="{{ route('home') }}" class="font-body-sm text-body-sm text-secondary hover:text-premium-brass transition-colors duration-300">{{ __('nav.home') }}</a></li>
+                    <li><a href="{{ route('about') }}" class="font-body-sm text-body-sm text-secondary hover:text-premium-brass transition-colors duration-300">{{ __('nav.about') }}</a></li>
+                    <li><a href="{{ route('projects') }}" class="font-body-sm text-body-sm text-secondary hover:text-premium-brass transition-colors duration-300">{{ __('nav.projects') }}</a></li>
+                    <li><a href="{{ route('contact') }}" class="font-body-sm text-body-sm text-secondary hover:text-premium-brass transition-colors duration-300">{{ __('nav.contact') }}</a></li>
                 </ul>
             </div>
 
-            <!-- Connect -->
             <div>
-                <h4 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Hubungi Kami</h4>
-                <div class="flex flex-col gap-3">
-                    <a href="https://wa.me/6285776755884" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
-                        <span class="material-symbols-outlined text-[20px] shrink-0">chat</span>
-                        WhatsApp
-                    </a>
-                    <a href="https://www.instagram.com/cahayainteriorsejahtera_?igsh=d2tydTJoYWMwMXI4" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
-                        <span class="material-symbols-outlined text-[20px] shrink-0">photo_camera</span>
-                        Instagram
-                    </a>
-                    <a href="https://www.tiktok.com/@cahayainteriorsejahteraa?_r=1&_t=ZS-973nIp4BVCR" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
-                        <span class="material-symbols-outlined text-[20px] shrink-0">movie</span>
-                        TikTok
-                    </a>
-                    <a href="https://maps.google.com/?q=Jl.+Sudirman+Kav.+52-53+SCBD+Jakarta+Selatan" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-secondary hover:text-primary transition-colors font-body-sm">
-                        <span class="material-symbols-outlined text-[20px] shrink-0">location_on</span>
-                        Google Maps
-                    </a>
-                </div>
+                <h4 class="font-label-lg text-label-lg text-primary uppercase tracking-[0.15em]">{{ __('footer.commitment') }}</h4>
+                <div class="w-8 h-0.5 bg-premium-brass mt-1.5 mb-5"></div>
+                <ul class="flex flex-col gap-3">
+                    <li class="font-body-sm text-body-sm text-secondary leading-relaxed flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[14px] text-premium-brass shrink-0 mt-0.5">check</span>
+                        {{ __('footer.commit_exclusive') }}
+                    </li>
+                    <li class="font-body-sm text-body-sm text-secondary leading-relaxed flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[14px] text-premium-brass shrink-0 mt-0.5">check</span>
+                        {{ __('footer.commit_quality') }}
+                    </li>
+                    <li class="font-body-sm text-body-sm text-secondary leading-relaxed flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[14px] text-premium-brass shrink-0 mt-0.5">check</span>
+                        {{ __('footer.commit_detail') }}
+                    </li>
+                    <li class="font-body-sm text-body-sm text-secondary leading-relaxed flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[14px] text-premium-brass shrink-0 mt-0.5">check</span>
+                        {{ __('footer.commit_client') }}
+                    </li>
+                </ul>
             </div>
 
-            <!-- Contact Info -->
             <div>
-                <h4 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Kontak</h4>
-                <div class="flex flex-col gap-2">
-                    <a href="mailto:cahayainteriorsejahtera@gmail.com" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors break-all">cahayainteriorsejahtera@gmail.com</a>
-                    <a href="https://wa.me/6285776755884" target="_blank" rel="noopener noreferrer" class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors">+62 857-7675-5884</a>
-                    <p class="font-body-sm text-body-sm text-secondary mt-2 leading-relaxed">Jl. Griya Alam Sentosa No.A6, Pasir Angin, Kec. Bantar Gebang, Kabupaten Bogor, Jawa Barat 16820</p>
-                </div>
+                <h4 class="font-label-lg text-label-lg text-primary uppercase tracking-[0.15em]">{{ __('footer.contact') }}</h4>
+                <div class="w-8 h-0.5 bg-premium-brass mt-1.5 mb-5"></div>
+                <ul class="flex flex-col gap-2">
+                    <li>
+                        <a href="https://wa.me/6285776755884" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-body-sm text-body-sm text-secondary px-3 py-2 rounded-lg hover:bg-surface-container-lowest hover:shadow-level-1 transition-all duration-300 group">
+                            <span class="material-symbols-outlined text-[18px] text-premium-brass shrink-0">chat</span>
+                            {{ __('footer.whatsapp') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/cahayainteriorsejahtera_?igsh=d2tydTJoYWMwMXI4" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-body-sm text-body-sm text-secondary px-3 py-2 rounded-lg hover:bg-surface-container-lowest hover:shadow-level-1 transition-all duration-300 group">
+                            <span class="material-symbols-outlined text-[18px] text-premium-brass shrink-0">photo_camera</span>
+                            {{ __('footer.instagram') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@cahayainteriorsejahteraa?_r=1&_t=ZS-973nIp4BVCR" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-body-sm text-body-sm text-secondary px-3 py-2 rounded-lg hover:bg-surface-container-lowest hover:shadow-level-1 transition-all duration-300 group">
+                            <span class="material-symbols-outlined text-[18px] text-premium-brass shrink-0">movie</span>
+                            {{ __('footer.tiktok') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cahayainteriorsejahtera@gmail.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-body-sm text-body-sm text-secondary px-3 py-2 rounded-lg hover:bg-surface-container-lowest hover:shadow-level-1 transition-all duration-300 group">
+                            <span class="material-symbols-outlined text-[18px] text-premium-brass shrink-0">mail</span>
+                            <span class="truncate">cahayainteriorsejahtera@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps?q=Jl+Griya+Alam+Sentosa+No+101+Dusun+Pasir+Angin+Cileungsi+Bogor+Jawa+Barat" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-body-sm text-body-sm text-secondary px-3 py-2 rounded-lg hover:bg-surface-container-lowest hover:shadow-level-1 transition-all duration-300 group">
+                            <span class="material-symbols-outlined text-[18px] text-premium-brass shrink-0">location_on</span>
+                            {{ __('footer.google_maps') }}
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <!-- Bottom bar -->
-        <div class="mt-12 pt-6 border-t border-outline-variant/50 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <div class="mt-10 pt-6 border-t border-outline-variant/30">
+            <div class="w-full rounded-card overflow-hidden shadow-level-1 border border-outline-variant/30">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.218462313083!2d106.98534529999999!3d-6.365767399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6993f284c89b13%3A0x497ff34d674e1256!2sJl.%20Griya%20Alam%20Sentosa%20No.101%2C%20Pasir%20Angin%2C%20Kec.%20Cileungsi%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016820!5e0!3m2!1sid!2sid!4v1" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-48 md:h-60"></iframe>
+            </div>
+        </div>
+
+        <div class="mt-10 pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p class="font-body-sm text-body-sm text-secondary text-center sm:text-left">
-                &copy; {{ date('Y') }} Cahaya Interior Sejahtera. All rights reserved.
+                {{ __('footer.copyright') }}
             </p>
-            <p class="font-body-sm text-body-sm text-secondary">
-                Jasa Interior Jakarta
-            </p>
+            <div class="flex flex-wrap justify-center gap-y-1 items-center">
+                <a href="https://cahayainteriorsejahtera.com" class="font-body-sm text-body-sm text-secondary hover:text-premium-brass transition-colors duration-300">{{ __('footer.keyword_interior_bogor') }}</a>
+                <span class="text-premium-brass mx-2 hidden sm:inline">•</span>
+                <a href="https://cahayainteriorsejahtera.com" class="font-body-sm text-body-sm text-secondary hover:text-premium-brass transition-colors duration-300">{{ __('footer.keyword_interior_jakarta') }}</a>
+                <span class="text-premium-brass mx-2 hidden sm:inline">•</span>
+                <a href="https://cahayainteriorsejahtera.com" class="font-body-sm text-body-sm text-secondary hover:text-premium-brass transition-colors duration-300">{{ __('footer.keyword_interior_rumah') }}</a>
+                <span class="text-premium-brass mx-2 hidden sm:inline">•</span>
+                <a href="https://cahayainteriorsejahtera.com" class="font-body-sm text-body-sm text-secondary hover:text-premium-brass transition-colors duration-300">{{ __('footer.keyword_interior_kantor') }}</a>
+            </div>
         </div>
     </div>
 </footer>

@@ -79,33 +79,113 @@
             <div class="text-center mb-10 md:mb-14">
                 <h2 class="font-headline-md text-primary leading-tight mb-3
                             text-2xl sm:text-3xl md:text-headline-md">
-                    {{ __('home.pillars_title') }}
+                    {{ __('contact.why_choose_us') }}
                 </h2>
                 <p class="font-body-md text-body-md text-secondary max-w-xl mx-auto">
-                    {{ __('home.pillars_subtitle') }}
+                    {{ __('contact.why_choose_subtitle') }}
                 </p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
                 <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
-                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-primary border border-outline-variant rounded-full">
-                        <span class="material-symbols-outlined text-[22px]">handyman</span>
+                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-premium-brass border border-outline-variant rounded-full">
+                        <span class="material-symbols-outlined text-[22px]">workspace_premium</span>
                     </div>
-                    <h3 class="font-headline-sm text-primary mb-3 text-lg md:text-headline-sm">{{ __('home.pillar_1_title') }}</h3>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('home.pillar_1_desc') }}</p>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.quality_craftsmanship') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.quality_craftsmanship_desc') }}</p>
                 </div>
                 <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
-                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-primary border border-outline-variant rounded-full">
-                        <span class="material-symbols-outlined text-[22px]">architecture</span>
+                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-premium-brass border border-outline-variant rounded-full">
+                        <span class="material-symbols-outlined text-[22px]">lightbulb</span>
                     </div>
-                    <h3 class="font-headline-sm text-primary mb-3 text-lg md:text-headline-sm">{{ __('home.pillar_2_title') }}</h3>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('home.pillar_2_desc') }}</p>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.free_consultation') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.free_consultation_desc') }}</p>
                 </div>
-                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300 sm:col-span-2 lg:col-span-1">
-                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-primary border border-outline-variant rounded-full">
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-premium-brass border border-outline-variant rounded-full">
                         <span class="material-symbols-outlined text-[22px]">verified</span>
                     </div>
-                    <h3 class="font-headline-sm text-primary mb-3 text-lg md:text-headline-sm">{{ __('home.pillar_3_title') }}</h3>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('home.pillar_3_desc') }}</p>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.project_warranty') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.project_warranty_desc') }}</p>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-premium-brass border border-outline-variant rounded-full">
+                        <span class="material-symbols-outlined text-[22px]">dashboard</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.functional_design') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.functional_design_desc') }}</p>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-premium-brass border border-outline-variant rounded-full">
+                        <span class="material-symbols-outlined text-[22px]">handshake</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.professional_service') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.professional_service_desc') }}</p>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="w-11 h-11 mb-5 flex items-center justify-center text-premium-brass border border-outline-variant rounded-full">
+                        <span class="material-symbols-outlined text-[22px]">straighten</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.free_survey') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.free_survey_desc') }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKING PROCESS -->
+    <section class="w-full py-14 md:py-24 px-5 sm:px-8 md:px-16 bg-surface-container-low">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10 md:mb-14">
+                <h2 class="font-headline-md text-primary leading-tight mb-3
+                            text-2xl sm:text-3xl md:text-headline-md">
+                    {{ __('contact.process_title') }}
+                </h2>
+                <p class="font-body-md text-body-md text-secondary max-w-xl mx-auto">
+                    {{ __('contact.process_subtitle') }}
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="font-headline-sm text-headline-sm text-premium-brass leading-none">01</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.process_1_title') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.process_1_desc') }}</p>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="font-headline-sm text-headline-sm text-premium-brass leading-none">02</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.process_2_title') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.process_2_desc') }}</p>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="font-headline-sm text-headline-sm text-premium-brass leading-none">03</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.process_3_title') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.process_3_desc') }}</p>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="font-headline-sm text-headline-sm text-premium-brass leading-none">04</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.process_4_title') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.process_4_desc') }}</p>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="font-headline-sm text-headline-sm text-premium-brass leading-none">05</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.process_5_title') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.process_5_desc') }}</p>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="font-headline-sm text-headline-sm text-premium-brass leading-none">06</span>
+                    </div>
+                    <h3 class="font-headline-sm text-primary mb-2 text-lg md:text-headline-sm">{{ __('contact.process_6_title') }}</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{{ __('contact.process_6_desc') }}</p>
                 </div>
             </div>
         </div>

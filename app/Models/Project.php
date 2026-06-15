@@ -10,6 +10,8 @@ class Project extends Model
 {
     protected $fillable = [
         'title',
+        'concept',
+        'function',
         'slug',
         'short_description',
         'description',

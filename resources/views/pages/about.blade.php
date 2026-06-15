@@ -29,15 +29,15 @@
                         <p>• {{ __('about.trust_since') }}</p>
                     </div>
                     <a href="{{ route('projects') }}"
-                       class="inline-block px-7 py-3 bg-primary text-white text-sm font-semibold rounded-lg
+                       class="inline-block w-full sm:w-auto text-center px-7 py-3 bg-primary text-white text-sm font-semibold rounded-lg
                               hover:bg-gray-800 transition-colors shadow-md">
                         {{ __('about.hero_cta') }}
                     </a>
                 </div>
                 <!-- Image -->
-                <div class="w-full rounded-xl overflow-hidden shadow-xl">
+                <div class="w-full h-64 sm:h-80 md:h-[500px] rounded-xl overflow-hidden shadow-xl">
                     <img alt="Premium interior design project by Cahaya Interior Sejahtera"
-                         class="w-full h-auto object-cover"
+                         class="w-full h-full object-cover"
                          src="{{ asset('images/3.png') }}">
                 </div>
             </div>
@@ -117,7 +117,7 @@
                     ['icon'=>'construction','label'=>__('about.service_6')],
                 ] as $svc)
                 <div class="text-center space-y-3 md:space-y-4">
-                    <div class="w-14 h-14 md:w-18 md:h-18 mx-auto rounded-full bg-white flex items-center justify-center shadow-md">
+                    <div class="w-14 h-14 md:w-20 md:h-20 mx-auto rounded-full bg-white flex items-center justify-center shadow-md">
                         <span class="material-symbols-outlined text-2xl text-primary">{{ $svc['icon'] }}</span>
                     </div>
                     <h4 class="font-semibold text-primary text-sm sm:text-base md:text-lg leading-snug">{{ $svc['label'] }}</h4>

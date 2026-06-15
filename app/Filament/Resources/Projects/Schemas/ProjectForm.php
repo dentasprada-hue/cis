@@ -3,7 +3,6 @@
 namespace App\Filament\Resources\Projects\Schemas;
 
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -34,15 +33,17 @@ class ProjectForm
                                 ->unique(ignoreRecord: true),
                         ]),
 
-                        Textarea::make('short_description')
-                            ->rows(3)
-                            ->columnSpanFull()
-                            ->maxLength(255)
-                            ->helperText('A brief summary used on listing pages.'),
+                        Grid::make(2)->schema([
+                            TextInput::make('concept')
+                                ->label('Design Concept')
+                                ->placeholder('e.g. Harmoni Minimalis')
+                                ->helperText('The design concept name displayed on the detail page hero.'),
+                            TextInput::make('function')
+                                ->label('Function')
+                                ->placeholder('e.g. Rumah Tinggal 2 Lantai')
+                                ->helperText('The functional type of the space.'),
+                        ]),
 
-                        RichEditor::make('description')
-                            ->columnSpanFull()
-                            ->helperText('Detailed case study and architectural descriptions.'),
                     ]),
 
                 Section::make('Project Specifications & Attributes')
