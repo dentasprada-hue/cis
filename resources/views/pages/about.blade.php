@@ -88,6 +88,7 @@
                         <li>• {{ __('about.mission_2') }}</li>
                         <li>• {{ __('about.mission_3') }}</li>
                         <li>• {{ __('about.mission_4') }}</li>
+                        <li>• {{ __('about.mission_5') }}</li>
                     </ul>
                 </div>
             </div>

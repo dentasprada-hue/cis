@@ -93,6 +93,7 @@
                         <li>• <?php echo e(__('about.mission_2')); ?></li>
                         <li>• <?php echo e(__('about.mission_3')); ?></li>
                         <li>• <?php echo e(__('about.mission_4')); ?></li>
+                        <li>• <?php echo e(__('about.mission_5')); ?></li>
                     </ul>
                 </div>
             </div>
