@@ -20,7 +20,8 @@
         "filament/spatie-laravel-media-library-plugin": "5.6.0",
         "laravel/framework": "^13.8",
         "laravel/tinker": "^3.0",
-        "spatie/laravel-medialibrary": "^11.23"
+        "spatie/laravel-medialibrary": "^11.23",
+        "spatie/laravel-sitemap": "^8.1"
     },
     "config": {
         "optimize-autoloader": true,

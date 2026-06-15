@@ -8,16 +8,22 @@ use Illuminate\Http\Response;
 class SeoController extends Controller
 {
     /**
-     * Generate dynamic sitemap.xml.
+     * Serve sitemap.xml.
      */
     public function sitemap(): Response
     {
+        $staticPath = public_path('sitemap.xml');
+        if (file_exists($staticPath)) {
+            return response(file_get_contents($staticPath), 200)
+                ->header('Content-Type', 'application/xml');
+        }
+
         $projects = Project::orderBy('updated_at', 'desc')->get();
-        
+
         $xml = view('seo.sitemap', compact('projects'))->render();
-        
+
         return response($xml, 200)
-            ->header('Content-Type', 'text/xml');
+            ->header('Content-Type', 'application/xml');
     }
 
     /**
@@ -25,13 +31,12 @@ class SeoController extends Controller
      */
     public function robots(): Response
     {
-        // Sitemap URL should not have a locale prefix
-        $sitemapUrl = url('/id/sitemap.xml');
-        
+        $sitemapUrl = url('/sitemap.xml');
+
         $content = "User-agent: *\n";
         $content .= "Allow: /\n\n";
         $content .= "Sitemap: {$sitemapUrl}\n";
-        
+
         return response($content, 200)
             ->header('Content-Type', 'text/plain');
     }
